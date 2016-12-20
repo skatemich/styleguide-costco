@@ -1,0 +1,70 @@
+// ===== Section =====
+#section-colour {
+
+		.nav-top {
+			position: fixed;
+			top: 25px;
+			left: 0;
+			z-index: 100;
+			margin-left: 50px;
+		}
+
+	// ===== Section - colour - Article =====
+	.section-article {
+
+		section {
+
+			margin-bottom: 80px;
+
+			.section-inner {
+				max-width: 1020px;
+				margin: 0 auto;
+
+				.section-inner__title {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+//colour-specific styles
+
+.colour-content {
+	max-width: 1020px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.colour-container {
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: flex-start;
+	// flex-wrap: wrap;
+	// margin-left: 5%;
+
+	.colour-grid {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: #{$small-desktop}) {
+	.colour-article {
+		padding: 0 5%;
+		.colour-container {
+			margin-left: 0;
+		}
+	}
+}
+
+@media (max-width: #{$phone-large}) {
+
+	.circle {
+    transform: scale(0.6);
+    transform-origin: left top;
+	}
+}
+
+

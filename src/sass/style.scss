@@ -1,0 +1,21 @@
+@import "includes/_base.scss";
+
+// Variables before grid
+@import 'includes/_variables.scss';
+@import 'includes/_grid.scss';
+@import 'includes/_main.scss';
+@import 'includes/_animation.scss';
+
+@import 'includes/_scrolldown.scss';
+
+// ===== Sections Style =====
+@import 'includes/_logo.scss';
+@import 'includes/_colour.scss';
+@import 'includes/_buttons.scss';
+@import 'includes/_typography.scss';
+@import 'includes/_iconography.scss';
+@import 'includes/_photography.scss';
+
+// ===== Reuseable Components Style =====
+@import 'includes/components/button_comp.scss';
+@import 'includes/components/color-circle.scss';

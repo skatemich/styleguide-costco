@@ -1,0 +1,63 @@
+// ===== Section =====
+#section-iconography {
+
+		.nav-top {
+			position: fixed;
+			top: 25px;
+			left: 0;
+			z-index: 100;
+			margin-left: 50px;
+		}
+
+	// ===== Section - Logo - Article =====
+	.section-article {
+
+		section {
+
+			margin-bottom: 80px;
+
+			.section-inner {
+				max-width: 1020px;
+				margin: 0 auto;
+
+				.section-inner__title {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+//icon-specific styles
+
+.iconography-article {
+	padding: 0 5%;
+}
+
+.iconography-content {
+	max-width: 1020px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.icon-container {
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: 5%;
+	img {
+		margin: 3% 5%;
+		width: 71px;
+	}
+}
+
+@media (max-width: #{$small-desktop}) {
+	.tgrap {
+	    display: block;
+	}
+	.icon-container {
+		margin-left: 0;
+	}
+}

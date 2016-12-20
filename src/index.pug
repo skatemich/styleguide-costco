@@ -1,0 +1,30 @@
+extends _layouts/home
+
+block head_end
+	link(rel="stylesheet" href="css/style.css") 
+
+block content
+	include _partials/main
+
+	//- Section Logo	
+	include _partials/section-logo
+	
+	//- 	//- Section Buttons
+	include _partials/section-buttons
+
+	//- 	//- Section Colour
+	include _partials/section-colour
+
+	//- 	//- Section Typography
+	include _partials/section-typography
+	
+	//- 	//- Section Iconography
+	include _partials/section-iconography
+
+	//- 	//- Section Photography
+	include _partials/section-photography
+
+block body_end
+	script(type="text/javascript" src="js/script.js")
+	script(type="text/javascript" src="js/main.js")
+	script(type="text/javascript" src="js/scrollParallax.js")

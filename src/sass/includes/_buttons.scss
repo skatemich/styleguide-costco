@@ -1,0 +1,272 @@
+// ===== Section =====
+#section-buttons {
+
+	.nav-top {
+		position: fixed;
+		top: 25px;
+		left: 0;
+		z-index: 100;
+		margin-left: 50px;
+	}
+
+	// ===== Section Starts=====
+	.content {
+		width: 100%;
+		height: 100%;
+	}
+
+	// ===== Section - Button - Article =====
+	.section-article {
+
+		section {
+
+			margin-bottom: 80px;
+
+			.section-inner {
+				max-width: 1020px;
+				margin: 0 auto;
+
+				.section-inner__title {
+					text-align: left;
+				}
+
+				.section-inner__desc {
+					text-align: center;
+					width: 60%;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+}
+
+
+//button-specific styles
+
+.button-content {
+	max-width: 1020px;
+	margin: 0 auto;
+	// overflow: auto;
+	overflow: hidden;
+	position: relative;
+
+	.button-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-left: 5%;
+    margin-top: 2%;
+	}
+}
+
+
+@media (max-width: #{$small-desktop}) {
+	.button-article {
+		padding: 0 5%;
+		.button-container {
+			margin-left: 0;
+		}
+	}
+}
+
+// ===== Button Grid Layout =====
+.button-grid-layout {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 5%;
+
+	.button--container {
+    width: calc(100% / 3);
+	}
+}
+
+// =====  Button Specs =====
+.button-spec {
+
+	.button-grid-layout {
+		.button--container:nth-child(1) {
+			.button {
+				background-color: $button-primaryLight-color;
+			}
+		}
+		
+		.button--container:nth-child(2) {
+			.button {
+				background-color: $button-primaryLight-hover-color;
+			}
+		}
+
+		.button--container:nth-child(3) {
+			.button {
+				background-color: $button-primaryLight-active-color;
+			}
+		}
+
+		.button--container:nth-child(4) {
+			.button {
+				background-color: $button-primaryDark-color;
+			}
+		}
+
+		.button--container:nth-child(5) {
+			.button {
+				background-color: $button-primaryDark-hover-color;
+			}
+		}
+		
+		.button--container:nth-child(6) {
+			.button {
+				background-color: $button-primaryDark-active-color;
+			}
+		}
+	}
+}
+
+// =====  Button States =====
+.button-stat {
+	
+	.button-grid-layout {
+		.button--container:nth-child(1) {
+			.button {
+				background-color: transparent;
+				border: 1px solid #2DA4D2;
+
+				h1.button--title {
+				color: #2DA4D2;
+				}
+			}
+		}
+		
+		.button--container:nth-child(2) {
+			.button {
+				background-color: #1A799C;
+			}
+		}
+
+		.button--container:nth-child(3) {
+			.button {
+				background-color: #0E4052;
+			}
+		}
+
+		.button--container:nth-child(4) {
+			.button {
+				background-color: transparent;
+				outline: 1px solid #FFFFFF;
+				position: relative;
+				z-index: 1;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: -20%;
+					left: -5%;
+					background-color: #124369;
+					width: 350%;
+					height: 140%;
+					z-index: -1;
+				}
+			}
+		}
+
+		.button--container:nth-child(5) {
+			.button {
+				background-color: transparent;
+				outline: 1px solid #CCCCCC;
+				position: relative;
+				z-index: 1;
+
+				h1.button--title {
+					color: #CCCCCC;
+				}
+			}
+		}
+		
+		.button--container:nth-child(6) {
+			.button {
+				background-color: transparent;
+				outline: 1px solid #979797;
+				position: relative;
+				z-index: 1;
+
+				h1.button--title {
+					color: #979797;
+				}
+			}
+		}
+	}
+}
+
+// =====  Button States - Disable Buttons =====
+
+.button-stat .disable-button-container {
+
+	.button {
+			background-color: #BBBBBB !important; 
+			border: none !important;
+
+			h1.button--title {
+				color: #474747 !important;
+			}
+		}
+}
+
+
+
+// =====  Button States - Focus Buttons =====
+
+.focus-button-container {
+
+	.button--container:nth-child(1) {
+
+		.button {
+			background-color: $button-primaryLight-color !important; 
+			border: none !important;
+			box-shadow: 0px 0px 10px 2px #3E94CF;
+
+			h1.button--title {
+				color: #FFFFFF !important;
+			}
+		}
+	}
+
+	.button--container:nth-child(2) {
+
+		.button {
+			background-color: $button-primaryDark-color !important; 
+			border: none !important;
+			box-shadow: 0px 0px 10px 2px #3E94CF;
+
+			h1.button--title {
+				color: #FFFFFF !important;
+			}
+		}
+	}
+
+	.button--container:nth-child(3) {
+
+		.button {
+			background-color: transparent !important; 
+ 		  border: 1px solid #2DA4D2;
+			box-shadow: 0px 0px 10px 2px #3E94CF;
+
+			h1.button--title {
+				color: #2DA4D2 !important;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: #{$small-desktop}) {
+	.buttons-article {
+		padding: 0 5%;
+		.button-container {
+			margin-left: 0;
+		}
+	}
+}
