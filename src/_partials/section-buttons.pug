@@ -13,15 +13,36 @@
         // =====Sections--btn-example =====
         section.animated.delay
           .section-inner
-            h1.section-inner__title.show-text Buttons
+            h1.section-inner__title.show-text Controls.
+        section.button-content.nav-bar
+          .grid-25.grid-sm-100.button-description
+            h3 Navigation Bar
+            p This illustrates the main navigation menu’s appearance when the user hovers over a menu item.
+          .grid-70.grid-sm-100.button-container
+            nav
+              ul
+                li 
+                  img.logo(src='img/costco/costco-logo.png', alt='')
+                li My Photos
+                li My Projects
+                li Photo Books
+                li Canvas Prints
+                li Metal Prints
+                li Greeting Cards
+                li Wall Decor
+                li Photo Gifts
+                li
+                  button Upload Photos
+                li
+                  div.cart
 
+        hr
         section.button-content#button-anchor-2(data-aos='fade-up' data-aos-anchor="#section-buttons" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
           .grid-25.grid-sm-100.button-description
             //- h3 Speciﬁcations
             p Speciﬁcations for buttons that will be used throughout the site. The font used for CTA buttons is Museo Sans.
 
           .grid-70.grid-sm-100.button-container
-
             .button-grid-layout
               .button--container
                 //- Button component here
