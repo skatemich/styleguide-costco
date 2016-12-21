@@ -1,22 +1,35 @@
 // ===== Section =====
 #section-colour {
 
+
 	// ===== Section - colour - Article =====
 	.section-article {
 
 		section {
 
-			margin-bottom: 80px;
+  h1 {
+		font-size: 48px;
+		font-weight: bold;
+		color: #f69d38;
+	}
 
-			.section-inner {
-				max-width: 1020px;
-				margin: 0 auto;
 
-				.section-inner__title {
-					text-align: left;
-				}
-			}
-		}
+	h2 {
+		font-size: 70px;
+		color: #dddddd;
+		font-weight: bold;
+	}
+
+	.nav-top {
+		position: fixed;
+		top: 25px;
+		left: 0;
+		z-index: 100;
+		margin-left: 50px;
+	}
+
+	.section-inner__title {
+		text-align: left;
 	}
 }
 
@@ -27,36 +40,80 @@
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
+
+	section {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
 }
 
+
 .colour-container {
-	// display: flex;
-	// flex-direction: row;
-	// justify-content: flex-start;
-	// flex-wrap: wrap;
-	// margin-left: 5%;
 
 	.colour-grid {
 		width: 100%;
 	}
-
 }
 
+.circle-container {
+  display: inline-block;
+  width: 25%;
+}
+
+
+// Media Query
 @media (max-width: #{$small-desktop}) {
 	.colour-article {
 		padding: 0 5%;
+
 		.colour-container {
 			margin-left: 0;
 		}
 	}
 }
 
-@media (max-width: #{$phone-large}) {
 
+@media (max-width: #{$tablet-portrait}) {
 	.circle {
-    transform: scale(0.6);
+    transform: scale(0.8);
     transform-origin: left top;
 	}
+
+	#section-colour {
+		h2 {
+			font-size: 36px;
+			color: #dddddd;
+			font-weight: bold;
+		}
+	}
 }
+
+@media (max-width: #{$phone-large}) {
+	.circle {
+    transform: scale(0.7);
+	}
+
+	.color-container {
+		.colour-grid {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+	
+	.circle-container {
+    width: 33%;
+	}
+
+}
+
+
+
+
+// @media (max-width: #{$phone-large}) {
+
+
+// }
 
 

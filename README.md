@@ -1,4 +1,9 @@
-## Pug-Sass Starter project.
+# Costco Styleguide
+
+### Version Log
+1. Project kickoff. (12/20/2016)
+
+### Pug-Sass Starter project.
 
 [![Build Status][travis-image]][travis-url]
 
@@ -18,6 +23,3 @@ This project uses...
 ### To run
 - Execute `npm install` from this directory to install dev dependencies.
 - Execute `gulp` to run all tasks, launch the browser sync local server and watch for changes.
-
-[travis-url]: https://travis-ci.org/azemoh/gulp-pug-sass-seed
-[travis-image]: https://travis-ci.org/azemoh/gulp-pug-sass-seed.svg

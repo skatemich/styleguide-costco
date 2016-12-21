@@ -5,142 +5,60 @@
   .content
     //- include components/color-circle
     // ===== Sections =====
-    .section.sec-buttons
+    .colour-content
       article.section-article.colour-article
               
         // =====Sections--iconography-example =====
-        section.animated.delay
-          .section-inner
-            h1.section-inner__title Colour
+        section.animated.delay.row
+          h1.section-inner__title Color.
 
-        section.colour-content.primary-color(data-aos='fade-up' data-aos-anchor="#section-colour" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
-          .grid-25.grid-sm-100.colour-description
-            <h3>Primary Colour</h3>
-            <p></p>
-          .grid-70.grid-sm-100.colour-container
+        section.row
+          .grid-40.grid-smd-100.grid-sm-100.colour-description
+            h2 Primary
+          .grid-60.grid-smd-100.grid-sm-100.colour-container
 
             .colour-grid
 
               .circle-container.primary-color__1
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #124369
-                  block c2
-                    .color.c2
-                      span.color-code #3E6684
-                  block c3
-                    .color.c3
-                      span.color-code #6B889F
-                  block c4
-                    .color.c4
-                      span.color-code #98ACBB
+                .circle #0060A8
+
 
               .circle-container.primary-color__2
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #2DA4D2
-                  block c2
-                    .color.c2
-                      span.color-code #54B3D8
-                  block c3
-                    .color.c3
-                      span.color-code #7BC2DE
-                  block c4
-                    .color.c4
-                      span.color-code #A3D3E5
+                .circle #FFFFFF
 
               .circle-container.primary-color__3
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #F0695C
-                  block c2
-                    .color.c2
-                      span.color-code #EE857D
-                  block c3
-                    .color.c3
-                      span.color-code #EFA09A
-                  block c4
-                    .color.c4
-                      span.color-code #F0BAB6
+                .circle #F69D38
 
+              .circle-container.primary-color__4
+                .circle #197B30
 
-        section.colour-content(data-aos='fade-up' data-aos-anchor="#section-colour" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
-          .grid-25.grid-sm-100.colour-description
-            <h3>Secondary Colour</h3>
-            <p></p>
-          .grid-70.grid-sm-100.colour-container
+        section.row
+          .grid-40.grid-smd-100.grid-sm-100.colour-description
+            h2 Secondary
+          .grid-60.grid-smd-100.grid-sm-100.colour-container
 
              .colour-grid
 
               .circle-container.secondary-color__1
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #0A4780
-                  block c2
-                    .color.c2
-                      span.color-code #386996
-                  block c3
-                    .color.c3
-                      span.color-code #668BAD
-                  block c4
-                    .color.c4
-                      span.color-code #95ADC4
+                .circle #007BDA
 
               .circle-container.secondary-color__2
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #23A4D2
-                  block c2
-                    .color.c2
-                      span.color-code #54B3D7
-                  block c3
-                    .color.c3
-                      span.color-code #7BC2DD
-                  block c4
-                    .color.c4
-                      span.color-code #A3D3E4
+                .circle #E0393E
 
               .circle-container.secondary-color__3
-                //- Color-circle component here
-                include components/color-circle
-                  block c1
-                    .color.c1
-                      span.color-code #6B67AD
-                  block c2
-                    .color.c2
-                      span.color-code #8682BA
-                  block c3
-                    .color.c3
-                      span.color-code #A09EC8
-                  block c4
-                    .color.c4
-                      span.color-code #BCBAD6
+                .circle #444444
 
-        section.colour-content(data-aos='fade-up' data-aos-anchor="#section-colour" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
-          .grid-25.grid-sm-100.colour-description
-            <h3>Background Colour</h3>
-            <p></p>
-          .grid-70.grid-sm-100.colour-container
+        section.row
+          .grid-40.grid-smd-100.grid-sm-100.colour-description
+            h2 Background
+          .grid-60.grid-smd-100.grid-sm-100.colour-container
 
             .colour-grid
 
               .circle-container.background-color__1
-                .circle
-                  span.color-code #124369
+                .circle #FFFFFF
 
               .circle-container.background-color__2
-                .circle
-                  span.color-code #F2F2F2
-
+                .circle #EDEDED
 
       .section-next

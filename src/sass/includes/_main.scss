@@ -94,6 +94,7 @@ body {
   }
 }
 
+
 @media (min-width: #{$phone-large}) {
   .active.menu {
     h2 {
@@ -112,6 +113,11 @@ body {
       animation: selected-menu 1s;
     }
   } 
+
+#colour:hover {
+  background: #F69D38;
+}
+
 
   #logo:hover {
     background: $dark-blue;
@@ -143,12 +149,18 @@ body {
     }
   }
 
+
   #logo.active {
     background: $dark-blue;
     &:after {
       background-color: $dark-blue;
     }
   }
+
+#colour.active {
+  background: #F69D38;
+}
+
 
   #colour.active {
     background: $yellow;

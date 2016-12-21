@@ -1,15 +1,14 @@
-.circle-container {
-  display: inline-block;
-  width: 33.33%;
-}
-
 .circle {
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	background-color: #f2f2f2;
 	border-radius: 100%;
-	overflow: hidden;
+	// overflow: hidden;
   margin: auto;
+	color: white;
+	text-align: center;
+	line-height: 130px;
+	font-size: 12px;
 }
 
 .color {
@@ -22,158 +21,60 @@
 	cursor: pointer;
 	position: relative;
   overflow: hidden;
-
-
-	// transition: all 1s;
 }
-
-.c1 {
-	// height: 60px;
-	height: 100%;
-	// line-height: 60px;
-
-}
-
-.c2, .c3, .c4 {
-	// height: 30px;
-	height: 0;
-	// line-height: 30px;
-}
-
-.aos-animate  {
-	
-	.color {
-		transition-delay: 1s;
-	}
-
-
-	.c1 {
-		height: 60px;
-		line-height: 60px;
-	}
-
-	.c2, .c3, .c4 {
-		height: 30px;
-		line-height: 30px;
-	}
-
-	.color-hide {
-		height: 0;
-		transition-delay: 0s;
-	}
-
-	.color-show {
-		height: 100%;
-		transition-delay: 0s;
-	}
-
-}
-
-
 
 
 // ===== Primary Colour 1 =====
-.primary-color__1 .c1 {
-	background-color: #124369;	
-}
-.primary-color__1 .c2 {
-  	background-color: #3E6684;
-}
-.primary-color__1 .c3 {
-  	background-color: #6B889F;
+.primary-color__1 .circle {
+	background-color: #0060A8;	
 }
 
-.primary-color__1 .c4 {
-  	background-color: #98ACBB;
-}
 
 // ===== Primary Colour 2 =====
-.primary-color__2 .c1 {
-	background-color: #2DA4D2;	
-}
-.primary-color__2 .c2 {
-  	background-color: #54B3D8;
-}
-.primary-color__2 .c3 {
-  	background-color: #7BC2DE;
-}
-
-.primary-color__2 .c4 {
-  	background-color: #A3D3E5;
+.primary-color__2 .circle {
+	background-color: #FFFFFF;	
+	color: #434343;
+	border: solid 0.7px #979797;
 }
 
 // ===== Primary Colour 3 =====
-.primary-color__3 .c1 {
-	background-color: #F0695C;	
-}
-.primary-color__3 .c2 {
-  	background-color: #EE857D;
-}
-.primary-color__3 .c3 {
-  	background-color: #EFA09A;
+.primary-color__3 .circle {
+	background-color: #F69D38;	
 }
 
-.primary-color__3 .c4 {
-  	background-color: #F0BAB6;
+// ===== Primary Colour 4 =====
+.primary-color__4 .circle {
+	background-color: #197B30;	
 }
+
 
 
 // ===== secondary Colour 1 =====
-.secondary-color__1 .c1 {
-	background-color: #0A4780;	
-}
-.secondary-color__1 .c2 {
-  	background-color: #386996;
-}
-.secondary-color__1 .c3 {
-  	background-color: #668BAD;
-}
-
-.secondary-color__1 .c4 {
-  	background-color: #95ADC4;
+.secondary-color__1 .circle {
+	background-color: #007BDA;	
 }
 
 // ===== secondary Colour 2 =====
-.secondary-color__2 .c1 {
-	background-color: #23A4D2;	
-}
-.secondary-color__2 .c2 {
-  	background-color: #54B3D7;
-}
-.secondary-color__2 .c3 {
-  	background-color: #7BC2DD;
-}
-
-.secondary-color__2 .c4 {
-  	background-color: #A3D3E4;
+.secondary-color__2 .circle {
+	background-color: #E0393E;	
 }
 
 // ===== secondary Colour 3 =====
-.secondary-color__3 .c1 {
-	background-color: #6B67AD;	
-}
-.secondary-color__3 .c2 {
-  	background-color: #8682BA;
-}
-.secondary-color__3 .c3 {
-  	background-color: #A09EC8;
-}
-
-.secondary-color__3 .c4 {
-  	background-color: #BCBAD6;
+.secondary-color__3 .circle {
+	background-color: #444444;	
 }
 
 // ===== Backgorund Colour =====
 .background-color__1 .circle {
-	background-color: #124369;
+	background-color: #FFFFFF;
+	color: #434343;
+	border: solid 0.7px #979797;
 }
 
 .background-color__2 .circle {
-  background-color: #F2F2F2;
+  background-color: #EDEDED;
+	color: #434343;
 
-  .color-code {
-    color: #4e4e4e;
-  }
 }
 
 .background-color__1, .background-color__2 {
@@ -201,32 +102,23 @@
 }
 
 
-.color .color-code {
-	width: 50px;
-	height: 30px;
-	// line-height: 30px;
-	position: absolute;
-	text-align: center;
-	display: block;
-	top: calc(50% - 15px);
-	left: calc(50% - 25px);
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	opacity: 0;
-	transition: all 0.3s cubic-bezier(0.3,0,0.3,1);
-}
+// .color .color-code {
+// 	width: 50px;
+// 	height: 30px;
+// 	// line-height: 30px;
+// 	position: absolute;
+// 	text-align: center;
+// 	display: block;
+// 	top: calc(50% - 15px);
+// 	left: calc(50% - 25px);
+// 	color: white;
+// 	text-transform: uppercase;
+// 	text-align: center;
+// }
 
 .color:hover .color-code{
-	opacity: 1;
 }
 
-
-.color.color-show .color-code {
-	top: calc(50% - 15px);
-	opacity: 1;
-	line-height: 30px;
-}
 
 
 

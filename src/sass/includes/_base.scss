@@ -51,7 +51,10 @@ a {
   line-height: 1.3em;
   color: inherit;
 }
-  
+
+p {
+  line-height: 20px;
+}
 
 hr {
   max-width: 1020px;
@@ -67,11 +70,4 @@ hr {
 *:after,
 *:before {
   box-sizing: border-box;
-}
-
-hr {
-		max-width: 1020px;
-		margin: 0 auto;
-		margin-bottom: 5%;
-		border: 1px solid #f2f2f2;
 }
