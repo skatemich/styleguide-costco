@@ -7,6 +7,9 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: 'Roboto', arial, sans-serif;
+  background-image: url(../img/costco/costco-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .styleguide-body {
@@ -64,13 +67,13 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: inset 0 0 0px 1px #f2f2f2;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
   background-color: #ffffff;
+  border-right: 3px solid #f2f2f2;
   h2 {
     color: #333;
     margin: 0;
@@ -79,63 +82,110 @@ body {
     height: auto;
     text-align: center;
     opacity: 0.2;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    h2 {
+      color: #fff;
+      opacity: 1;
+      font-weight: 100;
+    }
   }
 }
-.active.menu{
-  box-shadow:none;
-}
+
+.active.menu {
+  h2 {
+    color: #fff;
+    opacity: 1;
+    font-weight: 100;
+  }
+  &:after {
+    content: '';
+    position: fixed;
+    height: 200vh;
+    width: 3px;
+    left: 9.8%;
+    opacity: .6;
+    animation: selected-menu .8s;
+  }
+} 
+
 #logo:hover {
-  background: #0A4780;
+  background: $dark-blue;
 }
 
 #colour:hover {
-  background: #F0695C;
+  background: $yellow;
 }
 
 #buttons:hover {
   background: #f2f2f2;
+  h2 {
+    color: $light-blue;
+  }
 }
 
 #typography:hover {
-  background: #124369;
+  background: $black;
 }
 
 #iconography:hover {
-  background: #00abd6;
+  background: $light-blue;
 }
 
 #photography:hover {
-  background: #6B67AD;
+  background: $gray;
+  h2 {
+    color: $yellow;
+  }
 }
 
 #logo.active {
-  background: #0A4780;
+  background: $dark-blue;
+  &:after {
+    background-color: $dark-blue;
+  }
 }
 
 #colour.active {
-  background: #F0695C;
+  background: $yellow;
+  &:after {
+    background-color: $yellow;
+  }
 }
 
 #buttons.active {
   background: #f2f2f2;
-}
-
-#buttons.active{
- h2 {
-    color: #00abd6;
+  &:after {
+    background-color: #f2f2f2;
+  }
+  h2 {
+    color: $light-blue;
   }
 }
+
 #typography.active {
-  background: #124369;
+  background: $black;
+  &:after {
+    background-color: $black;
+  }
 }
 
 #iconography.active {
-  background: #00abd6;
+  background: $light-blue;
+  &:after {
+    background-color: $light-blue;
+  }
 }
 
 #photography.active {
-  background: #6B67AD;
+  background: $gray;
+  &:after {
+    background-color: $gray;
+  }
+  h2 {
+    color: $yellow;
+  }
 }
 
 .active:hover {
@@ -147,33 +197,33 @@ body {
   &:after {
     content: '';
     position: fixed;
-    top: 20px;
-    right: 0;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.07);
-    padding: 17px;
-    color: #fff;
-    width: 54px;
-    height: 54px;
-    line-height: 1.4rem;
-    text-align:center;
-    opacity: 0;
-    transition: opacity 1.5s;
-    border-bottom: solid rgba(0,0,0,0.07) 5px;
-    z-index: 0;
+    // top: 20px;
+    // right: 0;
+    // font-family: sans-serif;
+    // font-size: 20px;
+    // font-weight: bold;
+    // background: rgba(0, 0, 0, 0.07);
+    // padding: 17px;
+    // color: #fff;
+    // width: 54px;
+    // height: 54px;
+    // line-height: 1.4rem;
+    // text-align:center;
+    // opacity: 0;
+    // transition: opacity 1.5s;
+    // border-bottom: solid rgba(0,0,0,0.07) 5px;
+    // z-index: 0;
   }
-  &.active:after {
-    opacity: 1;
-    transition: opacity .5s;
-    background-image: url(../img/arrow.png);
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position-x: 19px;
-    background-position-y: 18px;
-    z-index: 1000;
-  }
+  // &.active:after {
+  //   opacity: 1;
+  //   transition: opacity .5s;
+  //   background-image: url(../img/arrow.png);
+  //   background-size: 18px;
+  //   background-repeat: no-repeat;
+  //   background-position-x: 19px;
+  //   background-position-y: 18px;
+  //   z-index: 1000;
+  // }
 }
 
 .main {
@@ -215,6 +265,14 @@ body {
 
 .scrolldisplay{
   display: flex !important;
+}
+
+.nav-top {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 100;
+  margin-left: 12%;
 }
 
 //Tablet and below responsive menu layout

@@ -34,6 +34,15 @@ $button-primaryDark-color: #0A4780;
 $button-primaryDark-hover-color: #0E334F;
 $button-primaryDark-active-color: #081D2E;
 
+// Costco Colours
+$dark-blue: #0060a8;
+$light-blue: #007bda;
+$yellow: #f69d38;
+$green:#197b30;
+$red: #e0393e;
+$black: #444444;
+$gray: #ededed;
+
 //  Mixins
 @mixin word-wrap-disable() {
 	white-space: nowrap; /* Chrome */
