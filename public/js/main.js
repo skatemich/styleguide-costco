@@ -96,6 +96,17 @@ $(document).ready(function() {
 		}
 	  });
 
+	$('#layout-menu, #layout').click(function() {
+		$('.main').removeClass('display');
+		$('.layout').toggleClass('display');
+		$('.menu').removeClass('active non-active');
+		$('#layout').toggleClass('active');
+		$('.menu').not('#layout').toggleClass('non-active');
+		if ($('.main').hasClass("display")) {
+			AOS.init();
+		}
+	  });
+
 	var wheight = $(window).height();
 	$('.scrolldown').click(function() {
 		$('html, body').animate({

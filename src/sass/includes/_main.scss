@@ -114,11 +114,6 @@ body {
     }
   } 
 
-#colour:hover {
-  background: #F69D38;
-}
-
-
   #logo:hover {
     background: $dark-blue;
   }
@@ -149,6 +144,10 @@ body {
     }
   }
 
+  #layout:hover {
+    background: $red;
+  }
+
 
   #logo.active {
     background: $dark-blue;
@@ -158,7 +157,7 @@ body {
   }
 
 #colour.active {
-  background: #F69D38;
+  background: $yellow;
 }
 
 
@@ -200,6 +199,13 @@ body {
     }
     h2 {
       color: $yellow;
+    }
+  }
+
+  #layout.active {
+    background: $red;
+    &:after {
+      background-color: $red;
     }
   }
 
