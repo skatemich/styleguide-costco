@@ -107,8 +107,7 @@ body {
       position: fixed;
       height: 200vh;
       width: 3px;
-      // left: 5.8%;
-      left: 113px;
+      left: 112px;
       opacity: .6;
       animation: selected-menu 1s;
     }
@@ -249,7 +248,7 @@ body {
 
 .main {
   min-height: 100vh;
-  width: 94%;
+  width: 93%;
   background: #fff;
   display: none;
   transition: all .5s;
@@ -300,17 +299,14 @@ body {
 
 @media (max-width: #{$tablet-portrait}) {
   .container {
-    width: 20%;
+    width: 10%;
     .menu {
       width: 100%;
     }
   }
-  .active.menu:after {
-    left: 19.7%;
-  }
   .main {
-    width: 80%;
-    margin-left: 20%;
+    width: 90%;
+    margin-left: 15%;
   }
   .nav-top {
     display: none;
