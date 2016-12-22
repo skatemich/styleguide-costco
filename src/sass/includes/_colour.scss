@@ -1,10 +1,18 @@
 // ===== Section =====
 #section-colour {
 
+	.content {
+		margin: 0;
+		padding: 0 4%;
+	}
+
 	// ===== Section - colour - Article =====
 	.section-article {
 
 		section {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
 
 			h1 {
 				font-size: 48px;
@@ -14,7 +22,7 @@
 
 
 			h2 {
-				font-size: 70px;
+				font-size: 50px;
 				color: #dddddd;
 				font-weight: bold;
 			}
@@ -33,15 +41,7 @@
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
-
-	section {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-bottom: 30px;
-	}
 }
-
 
 .colour-container {
 
@@ -63,6 +63,16 @@
 
 		.colour-container {
 			margin-left: 0;
+		}
+	}
+
+	#section-colour {
+
+		.section-article {
+			
+			section:last-child {
+				margin-bottom: 5%;
+			}
 		}
 	}
 }

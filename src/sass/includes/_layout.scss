@@ -1,11 +1,17 @@
 // ===== Layout Section Styles =====
 #section-layout {
 
+
+	.content {
+		padding: 0 4%;
+	}
+	
 	.layout-content {
 		max-width: 1020px;
 		margin: 0 auto;
 		overflow: hidden;
 		position: relative;
+
 
 		section {
 			display: flex;
@@ -22,17 +28,10 @@
 		color: #e0393e;
 	}
 
-	h2 {
-		font-size: 70px;
-		color: #dddddd;
-		font-weight: bold;
-	}
-
 	.section-inner__title {
 		text-align: left;
 	}
 }
-
 
 
 
@@ -208,34 +207,11 @@
 
 // Media Query
 
-//smaller desktop (sm)
-@media (max-width: #{$small-desktop}) {
-
-	#section-layout {
-
-		.layout-content {
-			section {
-				margin-top: 0;
-			}
-		}
-	}
-	
-	.layout-content {
-		padding: 0 4%;
-	}
+@media (max-width: #{$smaller-desktop}) {
 
 	.layout__desc {
 		margin-bottom: 80px;
 	}
-}
-
-
-@media (max-width: #{$tablet-portrait}) {
-
-}
-
-@media (max-width: #{$phone-large}) {
-
 
 }
 
