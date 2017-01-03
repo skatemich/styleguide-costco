@@ -3,81 +3,66 @@
   .content
 
     // ===== Sections =====
-    .section.sec-logo
-
+    .logo-content
       article.section-article.logo-article
 
-        section.animated.delay
-          .section-inner
+        .section__title.animated.delay
             h1.section-inner__title.show-text Logo
               
-        // ===== article 2nd: logo variation =====
-        section.logo-variation.logo-content#logo-anchor-2
-        
-          .logo-container
-            h1 01
-            .logo-container--content
-              .content-desc#parallax-1-desc
-                h2 Horizontal Logotype
-                p Use whenever possible
-              img(src='img/logo-1.png', alt='')#parallax-1-img
+        //- Logo - Variations
+        section.row
+          .grid-30.grid-smd-100.logo__desc
+            .logo__desc__container
+              .title-index-sm 1
+              p Horizontal Logotype On White
+            .logo__desc__container
+              .title-index-sm 2
+              p Horizontal Logotype On Blue
 
-          .logo-container
-            h1 02
-            .logo-container--content
-              .content-desc#parallax-2-desc
-                h2 Vertical Logotype
-                p Use in UI with limited space
-              img(src='img/logo-2.png', alt='')#parallax-2-img
-
-          .logo-container
-            h1 03
-            .logo-container--content   
-              .content-desc#parallax-3-desc
-                h2 Glyph
-                p Use in UI with limited space
-              img(src='img/logo-3.png', alt='')#parallax-3-img
-
+          .grid-70.grid-smd-100
+            .logo__img-container
+              span.title-index 1
+              img(src="img/costco/logo/costco-logo.png", alt="")
+              
+            .logo__img-container
+              span.title-index 2
+              .logo__blue-bg
+                img(src="img/costco/logo/costco-logo-bg-blue.png", alt="")
+                span
 
         hr
 
-        // ===== article 3rd: logo-grid =====
-        section
-          .project.grid-70.grid-sm-100#logo-anchor-3(data-aos='fade-up' data-aos-anchor="#logo-anchor-2" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
-            .project_card
-              .logo-grid-img
+        //- Logo - Greetings
+        section.row
+          .grid-30.grid-smd-100.logo__desc
+            .logo__desc__container
+              p Greetings by Costco logos are used on the photosite as well as the Greetings by Costco Micro site. There are two variations which depend on the imagery that the logos are impletmented with.
+
+            .logo__desc__container
+              .title-index-sm 1
+              p Text logo
+            .logo__desc__container
+              .title-index-sm 2
+              p Text logo with outlining glyph
+
+          .grid-70.grid-smd-100
+            .logo__img-container
+              span.title-index 1
+              img(src="img/costco/logo/costco-logo-greeting1.png", alt="")
+            .logo__img-container
+              span.title-index 2
+              .logo__blue-bg
+                img(src="img/costco/logo/costco-logo-greeting2.png", alt="")
 
         hr
 
+        //- Logo - Padding
+        section.row
+          .grid-30.grid-smd-100.logo__desc
+            .logo__desc__container
+              h3 Clear Zone
+              p A minimum margin of space that is equivalent to the height of the three blue bars is required around the logo.
 
-
-        section.logo-content.logo-recommend(data-aos='fade-up' data-aos-anchor="#logo-anchor-3" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
-          .grid-25.grid-sm-100
-            h3.show-text Padding Proportions
-            p
-              | Recommended Practices
-              br
-              | Try to keep at least one red hexagon worth of space between the logotype and other elements.
-          .grid-70.grid-sm-100
-            .logo-recommend-img
-              img(src='img/logo-padding-1.png', alt=' ')
-              img(src='img/logo-padding-2.png', alt='')
-
-        // ===== article 4rd: logo-recommend =====
-        //- section.logo-recommend
-        //-   .section-inner
-        //-     h3 Padding Proportions
-        //-     //- h2 Recommended Practices
-        //-     p
-        //-       | Recommended Practices
-        //-       | Try to keep at least one red hexagon worth of space between the logotype and other elements.
-        //-     .logo-recommend-img
-        //-       img(src='img/logo-padding-1.png', alt=' ')
-        //-       img(src='img/logo-padding-2.png', alt='')
-
-
-
-
-
-
-      .section-next
+          .grid-70.grid-smd-100
+            .logo__img-container.logo__img-container-padding
+              img(src="img/costco/logo/costco-logo-padding.png", alt="")

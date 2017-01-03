@@ -322,6 +322,7 @@ body {
     padding: 10px 0;
     border-bottom: 1px solid #f2f2f2;
     z-index: 10;
+
     .menu {
       width: auto;
       border: 0;
@@ -337,9 +338,16 @@ body {
       }
     }
   }
+
   .active.menu:after {
     display: none;
   }
+
+  // Change text color when active
+  .active.menu h2 {
+    color: #fff;
+  }
+
   .main {
     width: 100%;
     margin-left: 0;
