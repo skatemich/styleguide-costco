@@ -49,7 +49,7 @@
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		margin-left: 5%;
-    margin-top: 2%;
+    	margin-top: 2%;
 	}
 }
 
@@ -71,49 +71,7 @@
 	margin-left: 5%;
 
 	.button--container {
-    width: calc(100% / 3);
-	}
-}
-
-// =====  Button Specs =====
-.button-spec {
-
-	.button-grid-layout {
-		.button--container:nth-child(1) {
-			.button {
-				background-color: $button-primaryLight-color;
-			}
-		}
-		
-		.button--container:nth-child(2) {
-			.button {
-				background-color: $button-primaryLight-hover-color;
-			}
-		}
-
-		.button--container:nth-child(3) {
-			.button {
-				background-color: $button-primaryLight-active-color;
-			}
-		}
-
-		.button--container:nth-child(4) {
-			.button {
-				background-color: $button-primaryDark-color;
-			}
-		}
-
-		.button--container:nth-child(5) {
-			.button {
-				background-color: $button-primaryDark-hover-color;
-			}
-		}
-		
-		.button--container:nth-child(6) {
-			.button {
-				background-color: $button-primaryDark-active-color;
-			}
-		}
+    	width: calc(100% / 3);
 	}
 }
 
@@ -121,138 +79,37 @@
 .button-stat {
 	
 	.button-grid-layout {
-		.button--container:nth-child(1) {
-			.button {
-				background-color: transparent;
-				border: 1px solid #2DA4D2;
 
-				h1.button--title {
-				color: #2DA4D2;
-				}
-			}
-		}
-		
 		.button--container:nth-child(2) {
 			.button {
-				background-color: #1A799C;
+				background-color: transparent;
+				border: 1px solid $dark-blue;
+				h1 {
+					color: $dark-blue;
+				}
 			}
 		}
 
 		.button--container:nth-child(3) {
 			.button {
-				background-color: #0E4052;
+				background-color: $dark-blue;
+				opacity: .5;
 			}
 		}
 
 		.button--container:nth-child(4) {
 			.button {
-				background-color: transparent;
-				outline: 1px solid #FFFFFF;
-				position: relative;
-				z-index: 1;
-
-				&:after {
-					content: '';
-					position: absolute;
-					top: -20%;
-					left: -5%;
-					background-color: #124369;
-					width: 350%;
-					height: 140%;
-					z-index: -1;
-				}
-			}
-		}
-
-		.button--container:nth-child(5) {
-			.button {
-				background-color: transparent;
-				outline: 1px solid #CCCCCC;
-				position: relative;
-				z-index: 1;
-
-				h1.button--title {
-					color: #CCCCCC;
-				}
+				background-color: $green;
 			}
 		}
 		
-		.button--container:nth-child(6) {
-			.button {
-				background-color: transparent;
-				outline: 1px solid #979797;
-				position: relative;
-				z-index: 1;
-
-				h1.button--title {
-					color: #979797;
-				}
-			}
+	}
+	.disable-button-container .button-grid-layout .button--container {
+		.button {
+			background-color: $green;
 		}
 	}
 }
-
-// =====  Button States - Disable Buttons =====
-
-.button-stat .disable-button-container {
-
-	.button {
-			background-color: #BBBBBB !important; 
-			border: none !important;
-
-			h1.button--title {
-				color: #474747 !important;
-			}
-		}
-}
-
-
-
-// =====  Button States - Focus Buttons =====
-
-.focus-button-container {
-
-	.button--container:nth-child(1) {
-
-		.button {
-			background-color: $button-primaryLight-color !important; 
-			border: none !important;
-			box-shadow: 0px 0px 10px 2px #3E94CF;
-
-			h1.button--title {
-				color: #FFFFFF !important;
-			}
-		}
-	}
-
-	.button--container:nth-child(2) {
-
-		.button {
-			background-color: $button-primaryDark-color !important; 
-			border: none !important;
-			box-shadow: 0px 0px 10px 2px #3E94CF;
-
-			h1.button--title {
-				color: #FFFFFF !important;
-			}
-		}
-	}
-
-	.button--container:nth-child(3) {
-
-		.button {
-			background-color: transparent !important; 
- 		  border: 1px solid #2DA4D2;
-			box-shadow: 0px 0px 10px 2px #3E94CF;
-
-			h1.button--title {
-				color: #2DA4D2 !important;
-			}
-		}
-	}
-}
-
-
 
 @media (max-width: #{$small-desktop}) {
 	.buttons-article {
@@ -266,6 +123,7 @@
 // Costco
 .nav-bar nav {
 	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 8px;
 	&:after {
 		content: '';
 		width: 100%;
@@ -282,7 +140,7 @@
 		li {
 			float: left;
 			list-style-type: none;
-			color: #007bda !important;
+			color: #007bda;
 			font-weight: bold;
 			margin: 0 5px;
 			font-size: 8px;
@@ -296,6 +154,34 @@
 				margin-right: 15px;
 				padding-left: 15px;
 				cursor: pointer;
+			}
+			&.menu-active {
+				background-color: $dark-blue;
+				color: #FFF;
+				padding: 2px 5px;
+				position: relative;
+				cursor: auto;
+			}
+			.sub-menu {
+				flex-direction: column;
+				align-items: flex-start;
+				background-color: $gray;
+				position: absolute;
+				left: -1px;
+				top: 17px;
+				min-width: 110px;
+				padding: 3px 10px;
+				box-shadow: 0 0 5px rgba(0,0,0,.2);
+				&.large-dropdown {
+					width: 350px;
+					column-count: 3;
+					left: -150px;
+					display: block;
+				}
+				li {
+					padding: 1px 0;
+					font-weight: lighter;
+				}
 			}
 			.cart {
 				width: 40px;
@@ -321,6 +207,75 @@
 				max-height: 40px;
 				position: relative;
 				top: -5px;
+			}
+		}
+	}
+}
+
+.nav-container {
+	margin-bottom: 10px;
+	min-height: 100px;
+	p {
+		font-size: 12px;
+	}
+}
+.refresh {
+	background-color: $gray;
+	width: 100%;
+	min-height: auto;
+	nav {
+		padding-bottom: 0;
+	}
+	.logo {
+		width: 17%;
+		margin-left: 10px;
+	}
+	.sign-in {
+		float: right;
+		position: relative;
+		top: 5px;
+		right: 10px;
+		li {
+			color: $dark-blue;
+		}
+	}
+	.refresh-menu {
+		background-color: $dark-blue;
+		padding: 2px 10px;
+		li {
+			color: #fff;
+			&:last-child {
+				flex-grow: 2;
+				button {
+					float: right;
+					margin: 0;
+					background-color: $dark-blue;
+				}
+			}
+		}
+	}
+	.top-menu {
+		border-bottom: 1px solid #cbcbcb;
+		padding: 0 10px;
+		p {
+			font-size: 10px;
+			display: inline;
+			span:first-child {
+				font-weight: bold;
+			}
+			span:last-child {
+				font-weight: bold;
+				cursor: pointer;
+				color: $dark-blue;
+			}
+		}
+		ul {
+			display: block;
+			float: right;
+			margin-top: 6px;
+			li {
+				margin: 0 3px;
+				color: $dark-blue;
 			}
 		}
 	}

@@ -17,28 +17,126 @@
             h3 Navigation Bar
             p This illustrates the main navigation menu’s appearance when the user hovers over a menu item.
           .grid-70.grid-sm-100.button-container
-            nav
-              ul
-                li 
-                  img.logo(src='img/costco/costco-logo.png', alt='')
-                li My Photos
-                li My Projects
-                li Photo Books
-                li Canvas Prints
-                li Metal Prints
-                li Greeting Cards
-                li Wall Decor
-                li Photo Gifts
-                li
-                  button Upload Photos
-                li
-                  div.cart
+            .nav-container
+              nav
+                ul
+                  li 
+                    img.logo(src='img/costco/costco-logo.png', alt='')
+                  li My Photos
+                  li My Projects
+                  li Photo Books
+                  li Canvas Prints
+                  li Metal Prints
+                  li Greeting Cards
+                  li Wall Decor
+                  li Photo Gifts
+                  li
+                    button Upload Photos
+                  li
+                    div.cart
+              p Navigation Bar
+            .nav-container
+              nav
+                ul
+                  li My Photos
+                  li My Projects
+                  li Photo Books
+                  li Canvas Prints
+                  li Metal Prints
+                  li.menu-active Greeting Cards
+                  li Wall Decor
+                  li Photo Gifts
+              p Active Hover State
+            .nav-container
+              nav
+                ul
+                  li My Photos
+                  li My Projects
+                  li Photo Books
+                  li Canvas Prints
+                  li Metal Prints
+                  li Greeting Cards
+                  li.menu-active Wall Decor
+                    ul.sub-menu
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+                  li Photo Gifts
+              p Small Dropdown
+            .nav-container
+              nav
+                ul
+                  li My Photos
+                  li My Projects
+                  li Photo Books
+                  li Canvas Prints
+                  li Metal Prints
+                  li Greeting Cards
+                  li Wall Decor
+                  li.menu-active Photo Gifts
+                    ul.sub-menu.large-dropdown
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
 
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+                      li Art &amp; Image Gallery
+                      li Disney Image Gallery
+                      li Sports Gallery
+              p Large Dropdown
         hr
-        section.button-content#button-anchor-2(data-aos='fade-up' data-aos-anchor="#section-buttons" data-aos-anchor-placement="top-bottom"  data-aos-offset="-600")
+        section.button-content.nav-bar
+          .grid-25.grid-sm-100.button-description
+            h3 Navigation Bar Refresh
+            p A new main navigation menu design based on the one used on Costco.com.
+          .grid-70.grid-sm-100.button-container
+            .nav-container.refresh
+              nav
+                .top-menu
+                  p
+                    span My Warehouse:
+                    |  Camel Mountain, CA |
+                    span  Change
+                  ul
+                    li Help &nbsp;&nbsp;|
+                    li Contact Us &nbsp;&nbsp;|
+                    li Back to Costco.com &nbsp;&nbsp;|
+                    li Help
+                img.logo(src='img/costco/costco-logo.png', alt='')
+                ul.sign-in
+                  li Sign in / Register
+                  li
+                    div.cart
+                ul.refresh-menu
+                  li My Photos
+                  li My Projects
+                  li Photo Books
+                  li Canvas Prints
+                  li Metal Prints
+                  li Greeting Cards
+                  li Wall Decor
+                  li Photo Gifts
+                  li
+                    button Upload Photos
+        hr
+        // =====Sections--States =====
+
+        section.button-content.button-stat(data-aos='fade-up' data-aos-anchor="#button-anchor-3" data-aos-anchor-placement="top-bottom"  data-aos-offset="-400")
           .grid-25.grid-sm-100.button-description
             //- h3 Speciﬁcations
-            p Speciﬁcations for buttons that will be used throughout the site. The font used for CTA buttons is Museo Sans.
+            p The primary blue call to action is used to indicate continuation to a subsequent page.
 
           .grid-70.grid-sm-100.button-container
             .button-grid-layout
@@ -46,7 +144,7 @@
                 //- Button component here
                 include components/button_comp
                   block button-title
-                    h1.button--title button 
+                    h1.button--title Primary 
                   block button-desc-container
                     .button_desc_container
                       .button__desc Size: 15px
@@ -58,159 +156,10 @@
                     .button__annotation-right-text.button--animated-right 3px Radius Corners
                     .button__annotation-right-line.button--animated-scaleY
                     .button__annotation-right-circle.button--animated-scale
-        hr
-
-        // =====Sections--Speciﬁcations =====
-
-        section.button-content.button-spec#button-anchor-3(data-aos='fade-up' data-aos-anchor="#button-anchor-2" data-aos-anchor-placement="top-bottom"  data-aos-offset="-400")
-          .grid-25.grid-sm-100.button-description
-            h3 Primary Button
-            p Should be used as the main CTA for action such as Apply Now and for actions that normally completes the user’s task such as Save button.
-
-
-          .grid-70.grid-sm-100.button-container
-
-            .button-grid-layout
-              //- Primary Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Primary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #124369
-
-              //- Hover Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Hover 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #1F74B5
-
-              //- Active Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Active 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #1F74B5
-
-              //- Primary Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Primary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #1F74B5
-
-              //- Hover Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Hover 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #0E334F
-
-              //- Active Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Active 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #081D2E
-        hr
-
-        // =====Sections--States =====
-
-        section.button-content.button-stat(data-aos='fade-up' data-aos-anchor="#button-anchor-3" data-aos-anchor-placement="top-bottom"  data-aos-offset="-400")
-          .grid-25.grid-sm-100.button-description
-            h3 States
-            p Serves as cues for optional actions such as Cancel.
-
-
-          .grid-70.grid-sm-100.button-container
-
-            .button-grid-layout
-              //- Primary Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Secondary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Border/Text: #1A799C
-
-              //- Hover Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Hover 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #1A799C
-
-              //- Active Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Active 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #0E4052
-
-              //- Primary Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Secondary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Border/Text: #FFFFFF
-
-              //- Hover Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Hover 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Border/Text: #CCCCCC
-
-              //- Active Button
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Active 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Border/Text: #979797
-
-
-          //- Disable Button 
-          .grid-25.grid-sm-100.button-description
-            p Used to show users an action that is available, but not at the moment.
-
-          .grid-70.grid-sm-100.button-container.disable-button-container
-
-            .button-grid-layout
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Disabled 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #BBBBBB
-                      .button__desc Text: #474747
 
           //- Focused Button 
           .grid-25.grid-sm-100.button-description
-            p When using the keyboard.
+            p The size of call to action will vary based on the length of the label.
 
           .grid-70.grid-sm-100.button-container.focus-button-container
 
@@ -218,7 +167,7 @@
               .button--container
                 include components/button_comp
                   block button-title
-                    h1.button--title Focus 
+                    h1.button--title Primary 
                   block button-desc-container
                     .button_desc_container
                       .button__desc Shadow: #3E94CF
@@ -226,12 +175,27 @@
               .button--container
                 include components/button_comp
                   block button-title
-                    h1.button--title Focus 
+                    h1.button--title Secondary
 
               .button--container
                 include components/button_comp
                   block button-title
-                    h1.button--title Focus 
+                    h1.button--title Disabled
+
+          //- Disable Button 
+          .grid-25.grid-sm-100.button-description
+            p The green “place order” call to action is mainly used to indicate the final step from the shopping cart.
+
+          .grid-70.grid-sm-100.button-container.disable-button-container
+
+            .button-grid-layout
+              .button--container
+                include components/button_comp
+                  block button-title
+                    h1.button--title Place Your Order
+                  block button-desc-container
+                    .button_desc_container
+                      .button__desc Fill: #BBBBBB
 
 
 
