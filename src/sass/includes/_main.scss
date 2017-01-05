@@ -136,7 +136,7 @@ body {
     background: $light-blue;
   }
 
-  #photography:hover {
+  #imagery:hover {
     background: $gray;
     h2 {
       color: $yellow;
@@ -191,7 +191,7 @@ body {
     }
   }
 
-  #photography.active {
+  #imagery.active {
     background: $gray;
     &:after {
       background-color: $gray;

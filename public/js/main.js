@@ -81,12 +81,12 @@ $(document).ready(function() {
 		}
 	  });
 
-	$('#photography-menu, #photography').click(function() {
+	$('#imagery-menu, #imagery').click(function() {
 		$('.main').removeClass('display');
-		$('.photography').toggleClass('display');
+		$('.imagery').toggleClass('display');
 		$('.menu').removeClass('active non-active');
-		$('#photography').toggleClass('active');
-		$('.menu').not('#photography').toggleClass('non-active');
+		$('#imagery').toggleClass('active');
+		$('.menu').not('#imagery').toggleClass('non-active');
 		if ($('.main').hasClass("display")) {
 			AOS.init();
 		}
