@@ -52,7 +52,20 @@
     	margin-top: 2%;
 	}
 }
-
+.button-description {
+	h6 {
+		text-transform: uppercase;
+		margin: 0;
+		font-size: 12px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 12px;
+		margin-bottom: 15%;
+	}
+}
 
 @media (max-width: #{$small-desktop}) {
 	.button-article {
@@ -69,7 +82,6 @@
 	flex-wrap: wrap;
 	width: 100%;
 	margin-left: 5%;
-
 	.button--container {
     	width: calc(100% / 3);
 	}
@@ -77,9 +89,8 @@
 
 // =====  Button States =====
 .button-stat {
-	
+	padding-top: 20px;
 	.button-grid-layout {
-
 		.button--container:nth-child(2) {
 			.button {
 				background-color: transparent;
@@ -278,5 +289,107 @@
 				color: $dark-blue;
 			}
 		}
+	}
+}
+
+.marketing-buttons {
+	.button .button--title {
+		font-weight: lighter;
+	}
+	.button__annotation-top-text {
+		left: 70%;
+	}
+	.button__annotation-top-line {
+		left: 73%;
+		width: 10px;
+	}
+	.button__annotation-bottom-text-left {
+		display: inline;
+		position: absolute;
+		left: 0px;
+		bottom: -30px;
+		color: $button__annotation-color;
+		&:after {
+			content: '';
+			width: 30px;
+			height: 5px;
+			display: block;
+			border-right: 1px solid $button__annotation-color;
+			border-left: 1px solid $button__annotation-color;
+		}
+		&:before {
+			content: '';
+			width: 30px;
+			height: 1px;
+			display: block;
+			background-color: $button__annotation-color;
+			position: absolute;
+    		top: 20px;
+		}
+	}
+
+	.button__annotation-bottom-text-right {
+		display: inline;
+		position: absolute;
+		right: 0px;
+		bottom: -30px;
+		color: $button__annotation-color;
+		&:after {
+			content: '';
+			width: 30px;
+			height: 5px;
+			display: block;
+			border-right: 1px solid $button__annotation-color;
+			border-left: 1px solid $button__annotation-color;
+		}
+		&:before {
+			content: '';
+			width: 30px;
+			height: 1px;
+			display: block;
+			background-color: $button__annotation-color;
+			position: absolute;
+    		top: 20px;
+		}
+	}
+}
+
+.input {
+	h4 {
+		margin: 0;
+	}
+}
+
+.upload-buttons {
+	&.button-container {
+		margin-left: 10px;
+	}
+	.button {
+		width: 125px;
+		height: 20px;
+		background-color: $light-blue;
+		.button--title {
+			font-size: 10px;
+			line-height: 2;
+		}
+	}
+	.button__annotation-bottom-text-left {
+		&:after {
+			width: 10px;
+		}
+		&:before {
+			width: 10px;
+		}
+	}
+	.button__annotation-bottom-text-right {
+		&:after {
+			width: 10px;
+		}
+		&:before {
+			width: 10px;
+		}
+	}
+	.button__annotation-left-line {
+		height: 20px;
 	}
 }

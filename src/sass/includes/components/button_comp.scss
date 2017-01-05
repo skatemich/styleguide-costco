@@ -4,9 +4,8 @@
 	width: 200px;
 	height: 50px;
 	background-color: $dark-blue;
-	border-radius: 3px;
 	cursor: pointer;
-	
+	font-size: 12px;
 	.button--title {
 		font-size: 18px;
 		font-weight: 300;
@@ -57,18 +56,8 @@
 	right: 110%;
 	color: $button__annotation-color;
 	transition: all 250ms ease;
-	opacity: 0;
+	// opacity: 0;
 	pointer-events: none;
-}
-
-.button__annotation-right-text {
-	position: absolute;
-	top: calc(50% - 8px);
-	left: 115%;
-	color: $button__annotation-color;
-	transition: all 250ms ease;
-	pointer-events: none;
-	@include word-wrap-disable;
 }
 
 .button__annotation-left-line{
@@ -76,61 +65,110 @@
 	top: 0;
 	right: 105%;
 	background: $button__annotation-color;
-	width: 2px;
+	width: 1px;
 	height: 50px;
 	transition: all 250ms ease;
-	transform: scaleY(0);
+	// transform: scaleY(0);
 	pointer-events: none;
 	
 	&:after {
 		content:'';
 		position: absolute;
 		width: 5px;
-		height: 2px;
-		left: -50%;
+		height: 1px;
+		left: -2px;
 		background-color: $button__annotation-color;
 	}
 	&:before {
 		content:'';
 		position: absolute;
 		width: 5px;
-		height: 2px;
-		left: -50%;
+		height: 1px;
+		left: -2px;
 		bottom: 0;
 		background-color: $button__annotation-color;
 	}
 }
 
-.button__annotation-right-line {
+.button__annotation-top-line {
 	position: absolute;
-	top: 10%;
-	left: 107%;
-	background: #f255ac;
-	width: 2px;
-	height: 25px;
-	transition: all 1s cubic-bezier(0.42, 0, 0, 0.995);
-	transform: scaleY(0) rotate(0deg);
-	transform-origin: center;
+	top: -10px;
+	background: $button__annotation-color;
+	width: 200px;
+	height: 1px;
+	transition: all 250ms ease;
+	pointer-events: none;
+	
+	&:after {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 0%;
+		top: -2px;
+		background-color: $button__annotation-color;
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 100%;
+		top: -2px;
+		bottom: 0;
+		background-color: $button__annotation-color;
+	}
+}
+
+.button__annotation-top-text{
+	position: absolute;
+	top: -35px;
+	right: 40%;
+	color: $button__annotation-color;
+	transition: all 250ms ease;
 	pointer-events: none;
 }
 
-.button__annotation-right-circle {
+
+.button__annotation-bottom-line {
 	position: absolute;
-	top: -15%;
-	left: 95%;
-	background: '';
-	width: 20px;
-	height: 20px;
-	border: 2px solid #f255ac;
-	border-radius: 100%;
-	transition: all 1s cubic-bezier(0.42, 0, 0, 0.995);
-	transform: scale(0);
-	transform-origin: center;
+	bottom: -10px;
+	left: 25%;
+	background: $button__annotation-color;
+	width: 100px;
+	height: 1px;
+	transition: all 250ms ease;
 	pointer-events: none;
+	
+	&:after {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 0%;
+		top: -2px;
+		background-color: $button__annotation-color;
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 100%;
+		top: -2px;
+		bottom: 0;
+		background-color: $button__annotation-color;
+	}
 }
 
-
-
+.button__annotation-bottom-text{
+	position: absolute;
+	bottom: -35px;
+	right: 30%;
+	color: $button__annotation-color;
+	transition: all 250ms ease;
+	pointer-events: none;
+}
 
 // ====== Button Animation with Annotations =====
 

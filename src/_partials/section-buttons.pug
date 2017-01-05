@@ -13,8 +13,8 @@
           .section-inner
             h1.section-inner__title.show-text Controls.
         section.button-content.nav-bar
+          h3 Navigation Bar
           .grid-25.grid-sm-100.button-description
-            h3 Navigation Bar
             p This illustrates the main navigation menu’s appearance when the user hovers over a menu item.
           .grid-70.grid-sm-100.button-container
             .nav-container
@@ -98,8 +98,8 @@
               p Large Dropdown
         hr
         section.button-content.nav-bar
+          h3 Navigation Bar Refresh
           .grid-25.grid-sm-100.button-description
-            h3 Navigation Bar Refresh
             p A new main navigation menu design based on the one used on Costco.com.
           .grid-70.grid-sm-100.button-container
             .nav-container.refresh
@@ -134,69 +134,156 @@
         // =====Sections--States =====
 
         section.button-content.button-stat(data-aos='fade-up' data-aos-anchor="#button-anchor-3" data-aos-anchor-placement="top-bottom"  data-aos-offset="-400")
-          .grid-25.grid-sm-100.button-description
-            //- h3 Speciﬁcations
-            p The primary blue call to action is used to indicate continuation to a subsequent page.
+          .row
+            h3 Primary Buttons
+            .grid-25.grid-sm-100.button-description
+              p The primary blue call to action is used to indicate continuation to a subsequent page.
+              h6 Specifications
+              ul
+                li height: 50px;
+                li width: 200px;
+                li font-size: 18px;
 
-          .grid-70.grid-sm-100.button-container
-            .button-grid-layout
-              .button--container
-                //- Button component here
-                include components/button_comp
-                  block button-title
-                    h1.button--title Primary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Size: 15px
-                      .button__desc Font Weight: 300
-                
-                  block button-annotation
-                    .button__annotation-left-text.button--animated-left 50px
-                    .button__annotation-left-line.button--animated-scaleY
-                    .button__annotation-right-text.button--animated-right 3px Radius Corners
-                    .button__annotation-right-line.button--animated-scaleY
-                    .button__annotation-right-circle.button--animated-scale
+            .grid-70.grid-sm-100.button-container
+              .button-grid-layout
+                .button--container
+                  //- Button component here
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Primary 
+                  
+                    block button-annotation
+                      .button__annotation-top-text.button--animated-left 200px
+                      .button__annotation-top-line.button--animated-scaleY
+                      .button__annotation-left-text.button--animated-left 50px
+                      .button__annotation-left-line.button--animated-scaleY
+                      .button__annotation-bottom-line.button--animated-left
+                      .button__annotation-bottom-text.button--animated-scaleY centre aligned
 
-          //- Focused Button 
-          .grid-25.grid-sm-100.button-description
-            p The size of call to action will vary based on the length of the label.
+            //- Focused Button 
+          .row
+            .grid-25.grid-sm-100.button-description
+              p The size of call to action will vary based on the length of the label.
 
-          .grid-70.grid-sm-100.button-container.focus-button-container
+            .grid-70.grid-sm-100.button-container.focus-button-container
 
-            .button-grid-layout
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Primary 
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Shadow: #3E94CF
+              .button-grid-layout
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Primary 
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Fill: #0060A8
 
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Secondary
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Secondary
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Border/Fill: #0060A8
 
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Disabled
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Disabled
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Fill: #B2CFE5
 
-          //- Disable Button 
-          .grid-25.grid-sm-100.button-description
-            p The green “place order” call to action is mainly used to indicate the final step from the shopping cart.
+            //- Disable Button 
+          .row
+            .grid-25.grid-sm-100.button-description
+              p The green “place order” call to action is mainly used to indicate the final step from the shopping cart.
 
-          .grid-70.grid-sm-100.button-container.disable-button-container
+            .grid-70.grid-sm-100.button-container.disable-button-container
 
-            .button-grid-layout
-              .button--container
-                include components/button_comp
-                  block button-title
-                    h1.button--title Place Your Order
-                  block button-desc-container
-                    .button_desc_container
-                      .button__desc Fill: #BBBBBB
+              .button-grid-layout
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Place Your Order
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Fill: #197B30
+        hr
+        //- other buttons
+        section.button-content.marketing-buttons
+          h3 Marketing Banner Buttons
+          .row
+            .grid-25.grid-sm-100.button-description
+                h6 Specifications
+                ul
+                  li height: 50px;
+                  li width: 200px;
+                  li font-size: 18px;
+            .grid-70.grid-sm-100.button-container
+                .button-grid-layout
+                  .button--container
+                    include components/button_comp
+                      block button-title
+                        h1.button--title Shop Product
 
+                        block button-annotation
+                          .button__annotation-top-text.button--animated-left 10px
+                          .button__annotation-top-line.button--animated-scaleY
+                          .button__annotation-left-text.button--animated-left 50px
+                          .button__annotation-left-line.button--animated-scaleY
+                          .button__annotation-bottom-text-left.button--animated-scaleY 30px
+                          .button__annotation-bottom-text-right.button--animated-scaleY 30px
+
+
+                  .button--container
+                    include components/button_comp
+                      block button-title
+                        h1.button--title Shop Product
+                      block button-desc-container
+                        .button_desc_container
+                          .button__desc Fill: #0060A8
+          .row
+            h3 Upload buttons
+            .grid-25.grid-sm-100.button-description
+                p The upload photos button is primarily used in the navigation bar.
+                h6 Specifications
+                ul
+                  li height: 50px;
+                  li width: 200px;
+                  li font-size: 18px;
+            .grid-70.grid-sm-100.button-container.upload-buttons
+                .button-grid-layout
+                  .button--container
+                    include components/button_comp
+                      block button-title
+                        h1.button--title Upload Photos 
+                        block button-annotation
+                          .button__annotation-top-text.button--animated-left 10px
+                          .button__annotation-top-line.button--animated-scaleY
+                          .button__annotation-left-text.button--animated-left 20px
+                          .button__annotation-left-line.button--animated-scaleY
+                          .button__annotation-bottom-text-left.button--animated-scaleY 10px
+                          .button__annotation-bottom-text-right.button--animated-scaleY 10px
+
+                      block button-desc-container
+                        .button_desc_container
+                  .button--container
+                    include components/button_comp
+                      block button-title
+                        h1.button--title Upload Photos 
+                      block button-desc-container
+                        .button_desc_container
+                          .button__desc Fill: #007BDA
+          .row
+            h3 Radio Buttons
+            .grid-25.grid-sm-100.button-description
+              p Costco’s primary color is used to display the active selection.
+            .grid-70.grid-sm-100.button-container.input
+                .button-grid-layout
+                  input(type='radio')
+                  h4.button--title Horizontal
+                  input(type='radio')
+                  h4.button--title Vertical
+        hr
 
 
       .section-next
