@@ -295,6 +295,19 @@
 .marketing-buttons {
 	.button .button--title {
 		font-weight: lighter;
+		font-size: 16px;
+		margin-left: -10px;
+		&:after {
+			content: '';
+			width:0;
+			height:0;
+			border-top: 7px solid transparent;
+			border-bottom: 7px solid transparent;
+			border-left: 7px solid #fff;
+			position: absolute;
+			top: 1.1rem;
+			right: 1.9rem;	
+		}
 	}
 	.button__annotation-top-text {
 		left: 70%;
@@ -395,6 +408,9 @@
 		.button--title {
 			font-size: 10px;
 			line-height: 2;
+			&:after {
+				display: none;
+			}
 		}
 	}
 	.button__annotation-bottom-text-left {
@@ -533,6 +549,9 @@
 			&.selected {
 				color: #fff;
 				background: $dark-blue;
+				&:last-child:after {
+					border-left:7px solid #fff;
+				}
 			}
 			&:last-child:after {
 				content: '';
@@ -549,28 +568,28 @@
 	}
 }
 .product-thumbs {
+	span {
+		content: '';
+		height: 25px;
+		width: 25px;
+		border-top: 2px solid #7f7f7f;
+		border-right: 2px solid #7f7f7f;
+		transform: rotate(-135deg);
+		position: absolute;
+		top: 22px;
+		cursor: pointer;
+		&:last-child {
+			transform: rotate(45deg);
+			left: auto;
+			right: 245px;
+		}
+	}
 	ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		position: relative;
 		margin-left: 5%;
-		&:before, &:after {
-			content: '';
-			height: 25px;
-			width: 25px;
-			border-top: 2px solid #7f7f7f;
-			border-right: 2px solid #7f7f7f;
-			transform: rotate(-135deg);
-			position: absolute;
-			top: 22px;
-			left: -40px;
-		}
-		&:after {
-			transform: rotate(45deg);
-			left: auto;
-			right: -25px;
-		}
 		li {
 			float: left;
 			height: 67px;
@@ -579,8 +598,8 @@
 			margin-right: 20px;
 			border: solid 1px #dfdfdf;
 			position: relative;
-			&:first-child {
-				border: 3px solid $dark-blue;
+			&.current {
+				outline: 3px solid $dark-blue;
 			}
 			.top-text {
 				position: absolute;
@@ -619,15 +638,25 @@
 	.button-container {
 		display: flex;
 		padding-top: 20px;
+		padding-left: 10%;
 	}
 	.tile {
 		height: 146px;
 		width: 139px;
 		border: 1px solid $gray;
-		margin: 0 10px 10px 0;
+		margin: 0 20px 20px 0;
 		position: relative;
 		&:first-child {
-			border: 3px solid $dark-blue;
+			outline: 3px solid $dark-blue;
+			h5 {
+				color: $light-blue;
+			}
+		&:hover {
+			outline: 3px solid $dark-blue;
+		}
+		}
+		&:hover {
+			outline: 3px solid #64c8ff;
 			h5 {
 				color: $light-blue;
 			}
@@ -643,7 +672,7 @@
 		.top-text {
 			position: absolute;
 			top: -45px;
-			color: gray;
+			color: #a4a4a4;
 			text-align: center;
 			width: 100%;
 			font-size: 12px;
@@ -651,9 +680,10 @@
 		.top-line {
 			position: absolute;
 			top: -10px;
+			left: -3px;
 			background-color: $button__annotation-color;
 			height: 1px;
-			width: 137px;
+			width: 143px;
 			&:before, &:after {
 				content: '';
 				width: 1px;
@@ -684,7 +714,8 @@
 		.left-line {
 			position: absolute;
 			left: -10px;
-			height: 144px;
+			top: -3px;
+			height: 151px;
 			width: 1px;
 			background: $button__annotation-color;
 			&:before, &:after {
@@ -708,7 +739,10 @@
 		padding-bottom: 20px;
 		.tile {
 			&:nth-child(2) {
-				border: 3px solid #64c8ff;
+				outline: 3px solid #64c8ff;
+				&:hover {
+					box-shadow: none;
+				}
 				h5 {
 					color: $light-blue;
 				}
