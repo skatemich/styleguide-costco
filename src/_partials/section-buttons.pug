@@ -215,9 +215,10 @@
             .grid-25.grid-sm-100.button-description
                 h6 Specifications
                 ul
+                  li background-color: #0060A8;
+                  li font-size: 16px;
                   li height: 50px;
-                  li width: 200px;
-                  li font-size: 18px;
+                  li padding: 30px 10px;
             .grid-70.grid-sm-100.button-container
                 .button-grid-layout
                   .button--container
@@ -247,9 +248,10 @@
                 p The upload photos button is primarily used in the navigation bar.
                 h6 Specifications
                 ul
-                  li height: 50px;
-                  li width: 200px;
-                  li font-size: 18px;
+                  li background-color: #007BDA;
+                  li font-size: 10px;
+                  li height: 20px;
+                  li padding: 10px;
             .grid-70.grid-sm-100.button-container.upload-buttons
                 .button-grid-layout
                   .button--container
@@ -277,13 +279,94 @@
             h3 Radio Buttons
             .grid-25.grid-sm-100.button-description
               p Costco’s primary color is used to display the active selection.
-            .grid-70.grid-sm-100.button-container.input
-                .button-grid-layout
-                  input(type='radio')
+            .grid-70.grid-sm-100.button-container
+                .button-grid-layout.radio-buttons
+                  span.radio-button.radio-active
                   h4.button--title Horizontal
-                  input(type='radio')
+                  p Selection Made
+                  span.radio-button
                   h4.button--title Vertical
         hr
+        section.button-content.hero-section
+          h3 Homepage Hero Slider
+          .row
+            .grid-25.grid-sm-100.button-description
+                p The main hero slider on the homepage is controlled by left and right arrows on either ends of the image.  
+                  br 
+                  br 
+                  | The numbered controls on the bottom of the banner provides as an alternate way to cycle through the banners as well as indicate which one is being viewed.
+            .grid-70.grid-sm-100.button-container
+              .slider
+                .top-line
+                p.top-text 2000px
+                .left-line
+                p.left-text 630px
 
+                .left-arrow
+                .right-arrow
+
+                ul
+                  li 1
+                  li.selected 2
+                  li 3
+                  li 4
+                  li 5
+                  li 6
+                  li
+          .row
+            .grid-25.grid-sm-100.button-description
+                h3 Product Thumbs
+                p This element is used in the product details page to navigate through the preview images of a product.  
+            .grid-70.grid-sm-100.button-container.product-thumbs
+              ul
+                li
+                li
+                  .top-text
+                    p 67px
+                  .top-line
+                li
+                li
+        hr
+        section.button-content.tiles-section
+          .row
+            .grid-25.grid-sm-100.button-description
+                h3 Product Selection
+                p These tiles are mainly used in SKU pages to select from different types of products. 
+                  br 
+                  br 
+                  | Four-item selections are laid out at 2x2. Default tile layout will display three items per row.
+            .grid-40.grid-sm-100.button-container
+              .tile
+                .top-text
+                  p 202px
+                .top-line
+                .left-text
+                  p 221px
+                .left-line
+                h5 15oz. Photo Mugs
+              .tile
+                h5 11oz. Photo Mugs
+              .tile
+                h5 15oz. Collage Photo Mugs
+              .tile
+                h5 15oz. Collage Photo Mugs
+          .row.tile-states
+            .grid-25.grid-sm-100.button-description
+                h3 Tile States
+                h6 Border Specifications
+                ul
+                  li active selection – border: 3px solid #0060A9;
+                  li on-hover – border: 3px solid #64c8ff;
+                  li default – border: 1px solid #b2b2b2;
+            .grid-70.grid-sm-100.button-container
+              .tile
+                h5 Premium Layflat
+                p Active Selection
+              .tile
+                h5 Custom Photo Cover
+                p On-hover
+              .tile
+                h5 Padded Leather Cover
+                p Default View
 
       .section-next
