@@ -41,9 +41,10 @@ var scene = new ScrollMagic.Scene({
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#logo_padding",
-          offset: -200,
+          offset: -250,
         })
         .setTween(logo_2_Show)
+        // .addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
         .addTo(controller);
 
 
@@ -88,4 +89,31 @@ var scene = new ScrollMagic.Scene({
           offset: -200,
         })
         .setTween(layout_5_Show)
+        .addTo(controller);
+
+// ===== Imagery Section ScrollMagic =====
+
+var imagery_1_Show = TweenMax.from("#imagery-typograhpy", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    imagery_2_Show = TweenMax.from("#imagery-banner", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    imagery_3_Show = TweenMax.from("#imagery-call-out", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#imagery-typograhpy",
+          offset: -200,
+        })
+        .setTween(imagery_1_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#imagery-banner",
+          offset: -200,
+        })
+        .setTween(imagery_2_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#imagery-call-out",
+          offset: -200,
+        })
+        .setTween(imagery_3_Show)
         .addTo(controller);

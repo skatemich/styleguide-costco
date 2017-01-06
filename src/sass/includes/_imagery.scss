@@ -2,14 +2,18 @@
 #section-imagery {
 
 	// ===== Section - Logo - Article =====
-	.section-article {
+	.imagery-content {
+		max-width: 1020px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
 
 		section {
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
 			margin-bottom: 10%;
-			margin-top: 10%;
+  		margin-top: 10%;
 		}
 
 		.section-inner {
@@ -34,11 +38,7 @@
 	padding: 0 5%;
 }
 
-.imagery-content {
-	max-width: 1020px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
+.imagery-content section {
 
 	.imagery-title-sm {
 		font-size: 12px;
@@ -59,6 +59,9 @@
 		width: 100%;
 	}
 }
+
+
+
 
 .badge {
 	display: flex;
@@ -118,13 +121,17 @@
 	}
 }
 
-.imagery-flag {
+
+	
+.imagery-content {
 
 	.imagery-flag-img {
 		width: 260px;
 		margin: 0 14%;
 	}
-}
+}	
+
+
 
 
 
@@ -135,10 +142,7 @@
 		.grid-25 {
 			margin-bottom: 5%;
 		}
-	}
-
-	.imagery-flag {
-
+		
 		.imagery-flag-img {
 			margin: 0 auto;
 		}
@@ -147,9 +151,9 @@
 
 @media (max-width: #{$phone-large}) {
 
-.badge {
-	display: flex;
-}
+	.badge {
+		display: flex;
+	}
 
 	.badge-circle {
     width: 78px;
@@ -172,5 +176,4 @@
 			font-size: 12px;
 		}
 	}
-
 }
