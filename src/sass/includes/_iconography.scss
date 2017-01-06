@@ -1,45 +1,36 @@
 // ===== Section =====
 #section-iconography {
 
-	// ===== Section - Logo - Article =====
-	.section-article {
+	.content {
+		padding: 0 4%;
+	}
+
+	.iconography-content {
+		max-width: 1020px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
 
 		section {
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
 			margin-bottom: 10%;
-			margin-top: 10%;
+  		margin-top: 10%;
 		}
+	}
 
-		.section-inner {
-			max-width: 1020px;
-			margin: 0 auto;
+	.section-inner__title {
+		text-align: left;
+		color: $light-blue;
+	}
 
-			.section-inner__title {
-				text-align: left;
-				color: #007bda;
-			}
-		}
-
-		h3 {
-			margin-top: 0;
-		}
+	h3 {
+		margin-top: 0;
 	}
 }
 
 //icon-specific styles
-
-.iconography-article {
-	padding: 0 5%;
-}
-
-.iconography-content {
-	max-width: 1020px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-}
 
 .icon-container {
 

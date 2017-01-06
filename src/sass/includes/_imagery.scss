@@ -1,7 +1,10 @@
 // ===== Section =====
 #section-imagery {
 
-	// ===== Section - Logo - Article =====
+	.content {
+		padding: 0 4%;
+	}
+
 	.imagery-content {
 		max-width: 1020px;
 		margin: 0 auto;
@@ -16,14 +19,9 @@
   		margin-top: 10%;
 		}
 
-		.section-inner {
-			max-width: 1020px;
-			margin: 0 auto;
-
-			.section-inner__title {
-				text-align: left;
-				color: $yellow;
-			}
+		.section-inner__title {
+			text-align: left;
+			color: $yellow;
 		}
 
 		h3 {
@@ -33,10 +31,6 @@
 }
 
 //imagery-specific styles
-
-.imagery-article {
-	padding: 0 5%;
-}
 
 .imagery-content section {
 
