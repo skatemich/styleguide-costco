@@ -1,9 +1,9 @@
 // ===== Section =====
 #section-typography {
-	background-color: #f1f1f1;
+	background-color: #fff;
 	// ===== Section - Logo - Article =====
 	.lettera {
-		color: #fff;
+		color: #ededed;
 		font-size: 750px;
 		font-weight: bold;
 		position: absolute;
@@ -74,13 +74,12 @@
 			align-items: center;
 			color: #dedede;
 			display: flex;
-			font-size: 43px;
+			font-size: 36px;
 			font-weight: bold;
 			justify-content: flex-end;
 			letter-spacing: -1px;
 			margin: auto;
 			text-align: right;
-			-webkit-text-stroke: 1px #dedede;
 		}
 	}
 }
@@ -169,43 +168,49 @@
 	align-self: center;
 	margin-left: 7%;
 
-	h1, h2, h3, h4, .hlink, .hbody {
+	h1, h2, h3, h4, .hbody, .hgray {
 		text-align: left;
 	}
 
 	h1 {
+		color: #333333;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 0.25px;
+		line-height: auto;
 		margin: 0;
-		font-size: 38px;
-		font-weight: 100;
-		line-height: 49.4px ;
 	}
 
 	h2 {
+		color: #0060a8;
+		font-size: 28px;
+		font-weight: bold;
+		letter-spacing: 0.25px;
+		line-height: auto;
 		margin: 0;
-		font-size: 30px;
-		font-weight: 300;
 	}
 
 	h3 {
-		color: #00abd6;
-		font-size: 23px;
-		font-weight: 300;
-		letter-spacing: 1.5px;
-		line-height: 27.6px ;
+		color: #333333;
+		font-size: 26px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: auto;
+		margin: 0;
 	}
 
 	h4 {	
-		color: #00abd6;
-		font-size: 18px;
-		font-weight: 300;
-		letter-spacing: 1.5px;
-		line-height: 21.6px;
+		color: #333333;
+		font-size: 22px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: auto;
+		margin: 0;
 	}
 
-	.hgray {
-		color: rgba(0, 0, 0, 0.5);
+	.hdescription {
 		font-size: 18px;
-		font-weight: 300;
+		font-weight: bold;
 		letter-spacing: 1.5px;
 		line-height: 21.6px;
 		-webkit-margin-before: 1.33em;
@@ -214,10 +219,11 @@
 		-webkit-margin-end: 0px;
 	}
 
-	.hlink {
-		color: #194069;
+	.hproduct {
+		color: #0060a8;
 		font-size: 16px;
-		font-weight: 300;
+		font-weight: bold;
+	    letter-spacing: 0;
 		line-height: 24px;
 		-webkit-margin-before: 24px;
 		-webkit-margin-after: 24px;
@@ -225,53 +231,27 @@
 		-webkit-margin-end: 0px;
 	} 
 
-	.hbody {
-		font-size: 22px;
-		font-weight: 300;
-		line-height: 24px;
-		-webkit-margin-before: 24px;
-		-webkit-margin-after: 24px;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
-	}
-
-	.hbodys {
-		font-size: 16px;
-		font-weight: 300;
-		line-height: 24px;
-		-webkit-margin-before: 24px;
-		-webkit-margin-after: 24px;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
-	}
-
-	.typo_desc_container {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
+	.htitle {
 		font-size: 12px;
-		margin-top: 10px;
+		font-weight: bold;
+		line-height: 24px;
+		-webkit-margin-before: 24px;
+		-webkit-margin-after: 24px;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+	}
+
+	.hmenu {
+		font-size: 10px;
+		font-weight: 300;
+		line-height: 24px;
+		-webkit-margin-before: 24px;
+		-webkit-margin-after: 24px;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
 	}
 }
 
-.section.sec-blue {
-	
-	.back {
-		background-color: #124369;
-		padding: 5% 27% 5%;
-		
-		h1, h4 {
-			color: #fff;
-			padding: 0% 15%;
-			text-align: center;
-		}
-	}	
-}
 
 @media (max-width: #{$med-sm-desktop}) {
 	#firts-sectionA .fontname {
