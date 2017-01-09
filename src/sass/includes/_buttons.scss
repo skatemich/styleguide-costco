@@ -255,12 +255,19 @@
 		margin-left: 10px;
 	}
 	.sign-in {
-		float: right;
-		position: relative;
-		top: 5px;
+		position: absolute;
+		top: 34px;
 		right: 10px;
 		li {
 			color: $dark-blue;
+		}
+	}
+	nav ul li .cart {
+		height: 32px;
+		width: 32px;
+		background-position: 10px 10px;
+		&:after {
+			padding: 2px 5px;
 		}
 	}
 	.refresh-menu {
@@ -323,10 +330,10 @@
 		}
 	}
 	.button__annotation-top-text {
-		left: 70%;
+		left: 72%;
 	}
 	.button__annotation-top-line {
-		left: 73%;
+		left: 75%;
 		width: 10px;
 	}
 	.button__annotation-bottom-text-left {

@@ -117,3 +117,46 @@ var scene = new ScrollMagic.Scene({
         })
         .setTween(imagery_3_Show)
         .addTo(controller);
+        
+// ===== Controls Section ScrollMagic =====
+
+var controls_1_Show = TweenMax.from("#controls-refresh", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    controls_2_Show = TweenMax.from("#controls-primary-btns", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+    controls_3_Show = TweenMax.from("#controls-marketing-btns", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+    controls_4_Show = TweenMax.from("#controls-hero", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+    controls_5_Show = TweenMax.from("#controls-tiles", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#controls-refresh",
+          offset: -200,
+        })
+        .setTween(controls_1_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#controls-primary-btns",
+          offset: -200,
+        })
+        .setTween(controls_2_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#controls-marketing-btns",
+          offset: -200,
+        })
+        .setTween(controls_3_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#controls-hero",
+          offset: -200,
+        })
+        .setTween(controls_4_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#controls-tiles",
+          offset: -200,
+        })
+        .setTween(controls_5_Show)
+        .addTo(controller);

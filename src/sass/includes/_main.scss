@@ -30,7 +30,6 @@ body {
 
 .container {
   position: fixed;
-  width: 6%;
   min-width: 115px;
   height: 100%;
   cursor: pointer;
@@ -319,7 +318,6 @@ body {
     height: auto;
     flex-direction: row;
     background-color: #FFF;
-    padding: 10px 0;
     border-bottom: 1px solid #f2f2f2;
     z-index: 10;
 
@@ -327,6 +325,7 @@ body {
       width: auto;
       border: 0;
       margin: 0 4px;
+      padding: 10px 0;
       &:hover {
         animation: none;
         height: auto;
@@ -339,13 +338,11 @@ body {
     }
   }
 
-  .active.menu:after {
-    display: none;
-  }
-
-  // Change text color when active
-  .active.menu h2 {
-    color: #fff;
+  .active.menu {
+    border-bottom: 2px solid $dark-blue;
+    &:after {
+      display: none;
+    }
   }
 
   .main {
