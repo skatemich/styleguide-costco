@@ -159,6 +159,7 @@ var scene = new ScrollMagic.Scene({
           offset: -200,
         })
         .setTween(controls_5_Show)
+        .addTo(controller);
 
 // ===== typography Section ScrollMagic =====
 
