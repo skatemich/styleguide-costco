@@ -43,10 +43,6 @@ $(document).ready(function() {
 		$('#colour').toggleClass('active');
 		$('.menu').not('#colour').toggleClass('non-active');
 
-		// ===== Reset color circle when switching back from other sections =====
-		$( '.c1, .c2, .c3 , .c4' ).removeClass('color-hide');
-		$( '.c1, .c2, .c3 , .c4' ).removeClass('color-show');
-		$( '.color' ).css("transition-delay", "1s");	
 		if ($('.main').hasClass("display")) {
 			AOS.init();
 		}
@@ -85,12 +81,23 @@ $(document).ready(function() {
 		}
 	  });
 
-	$('#photography-menu, #photography').click(function() {
+	$('#imagery-menu, #imagery').click(function() {
 		$('.main').removeClass('display');
-		$('.photography').toggleClass('display');
+		$('.imagery').toggleClass('display');
 		$('.menu').removeClass('active non-active');
-		$('#photography').toggleClass('active');
-		$('.menu').not('#photography').toggleClass('non-active');
+		$('#imagery').toggleClass('active');
+		$('.menu').not('#imagery').toggleClass('non-active');
+		if ($('.main').hasClass("display")) {
+			AOS.init();
+		}
+	  });
+
+	$('#layout-menu, #layout').click(function() {
+		$('.main').removeClass('display');
+		$('.layout').toggleClass('display');
+		$('.menu').removeClass('active non-active');
+		$('#layout').toggleClass('active');
+		$('.menu').not('#layout').toggleClass('non-active');
 		if ($('.main').hasClass("display")) {
 			AOS.init();
 		}
@@ -103,12 +110,4 @@ $(document).ready(function() {
 	  	}, 500);	
 	});
 	
-	$(window).scroll(function(){
-  		if($(window).scrollTop() > $(document).height()*0.12){
-    		$('li').css({'color': '#d6d6d6'})
-  	}else{
-  		$('li').css({'color': '#fff'})
-  		}
-	});
-
-  });
+});

@@ -1,55 +1,105 @@
 // ===== Section =====
 #section-iconography {
 
-	// ===== Section - Logo - Article =====
-	.section-article {
+	.content {
+		padding: 0 4%;
+	}
+
+	.iconography-content {
+		max-width: 1020px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
 
 		section {
-
-			margin-bottom: 80px;
-
-			.section-inner {
-				max-width: 1020px;
-				margin: 0 auto;
-
-				.section-inner__title {
-					text-align: left;
-				}
-			}
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 10%;
+  		margin-top: 10%;
 		}
+	}
+
+	.section-inner__title {
+		text-align: left;
+		color: $light-blue;
+	}
+
+	h3 {
+		margin-top: 0;
 	}
 }
 
 //icon-specific styles
 
-.iconography-article {
-	padding: 0 5%;
-}
-
-.iconography-content {
-	max-width: 1020px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-}
-
 .icon-container {
-	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-	flex-wrap: wrap;
-	margin-left: 5%;
+
 	img {
 		margin: 3% 5%;
-		width: 71px;
+		height: 58px;
+	}
+
+	.icon-cart {
+		width: 80px;
+		height: 80px;
+	}
+
+	.icon-i {
+		width: 44px;
+		height: 44px;
+	}
+
+	.icon-cart-item-count {
+		width: 38px;
+		height: 38px;
+	}
+
+	.icon-lightbulb-1 {
+		height: 52px;
+	}
+
+	.icon-mail {
+		height: 36px;
 	}
 }
 
-@media (max-width: #{$small-desktop}) {
-	.tgrap {
-	    display: block;
+.icon-row {
+	display: flex;
+	align-items: baseline;
+}
+
+.icon-set {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3% 5%;
+
+	img {
+		margin: 0;
+		margin-bottom: 12px;
 	}
+
+	.caption {
+		font-size: 12px;
+	}
+}
+
+
+
+
+@media (max-width: #{$small-desktop}) {
+
 	.icon-container {
-		margin-left: 0;
+
+		img {
+			margin: 5% 5%;
+		}
+	}
+
+	.icon-set {
+
+		.caption {
+			font-size: 11px;
+		}
 	}
 }

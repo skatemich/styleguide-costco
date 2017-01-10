@@ -8,7 +8,7 @@
 		font-weight: bold;
 		position: absolute;
 		line-height: 1;
-		margin: 50px 0 0;
+		margin: 50px 0 0 -100px;
 		padding: 0;
 	}
 
@@ -18,13 +18,16 @@
 		font-weight: bold;
 		position: absolute;
 		line-height: 1;
-		margin: 38% 0 0 91px;
+		margin: 23% 0 0 60px;
 		margin-bottom: 0px;
 		padding: 0;
 		width: 300px;
 
-		h1 {	
-			margin-top: -7px;
+		h1.helvetica {	
+			font-size: 36px;
+			font-style: normal;
+			font-weight:300; 
+			margin-top: 7px;
 			text-align: left;
 		}
 	}
@@ -40,9 +43,8 @@
 			margin: 0 auto;
 			
 			.section-inner__title {
-				color: #13567B;
+				color: #333;
 				text-align: left;
-				font-size: 62px;
 				font-weight: bold;
 			}
 			
@@ -68,6 +70,7 @@
 .tgrap {
 	display: flex;
 	overflow: hidden;
+	margin: 10px;
 	.typo-description {
 		
 		h1 {
@@ -82,6 +85,10 @@
 			text-align: right;
 		}
 	}
+}
+
+.typo_desc_container{
+	font-size: 12px;		
 }
 
 .headings {
@@ -212,11 +219,7 @@
 		font-size: 18px;
 		font-weight: bold;
 		letter-spacing: 1.5px;
-		line-height: 21.6px;
-		-webkit-margin-before: 1.33em;
-		-webkit-margin-after: 1.33em;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
+		line-height: auto;
 	}
 
 	.hproduct {
@@ -224,34 +227,47 @@
 		font-size: 16px;
 		font-weight: bold;
 	    letter-spacing: 0;
-		line-height: 24px;
-		-webkit-margin-before: 24px;
-		-webkit-margin-after: 24px;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
+		line-height: auto;
 	} 
 
 	.htitle {
 		font-size: 12px;
-		font-weight: bold;
-		line-height: 24px;
-		-webkit-margin-before: 24px;
-		-webkit-margin-after: 24px;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
+		line-height: auto;
 	}
 
 	.hmenu {
+		color: #0060a8;
 		font-size: 10px;
 		font-weight: 300;
-		line-height: 24px;
-		-webkit-margin-before: 24px;
-		-webkit-margin-after: 24px;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
+		line-height: auto;
 	}
 }
+.tmosaic{
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 70px 0 10px;
+}
+.textmosaic{
+	font-size: 18px;
+	line-height: 1.11;
+}
+.timage{
+	text-align: left;
+    margin: 0 0 50px 20%;
 
+    h3{
+    	color: #333;
+    	font-size: 26px;
+    	font-weight: bold;
+    	text-align: center;
+
+    }
+    .hdescription{
+    	text-align: center;
+    	padding: 0 10%;
+    }
+}
 
 @media (max-width: #{$med-sm-desktop}) {
 	#firts-sectionA .fontname {
@@ -259,7 +275,7 @@
 	}
 
 	#firts-sectionA article .fontname {
-		color: #444;
+	color: #444;
     opacity: 1;
     margin: 10px auto;
     display: -webkit-box;
@@ -270,7 +286,11 @@
     width: 320px;
     h1{
     	margin: 0 0 0 10px;
+    	width: 100%;
     }
+	}
+	.row{
+		padding: 0 30px;
 	}
 }
 
@@ -284,6 +304,7 @@
 				justify-content: flex-start;
 				margin-top: 40px;
 				padding: 0 30px;
+				text-align: left;
 			}
 		}
 		
@@ -296,9 +317,43 @@
 	.section.sec-blue .back {
 		padding: 5% 5%;	
 	}
-
+	
+	#section-typography .lettera{
+		margin: auto;
+		text-align: center;
+	}
 	#section-typography .section-article section .section-inner .section-inner__title {
 		text-align: center;
 		padding: 0 0 0 30px;
+	}
+	.row{
+		padding: 0 30px;
+	
+		.timage{
+			text-align: center;
+			margin: 20px auto;
+			img{
+				width: 100%;	
+			}
+		}
+	}
+	#section-typography .fontname{
+		display:none;
+	}
+}
+@media (max-width: #{$fablet}) {
+	#firts-sectionA article .fontname{
+		flex-wrap: wrap;
+	}
+	#section-typography .lettera{
+		font-size: 380px;
+	}
+	.letters{
+	    text-align: center;
+	    margin: auto;
+	    width: 100%;
+	}
+	.section-article section .section-inner .section-inner__title{
+		padding: 0;
 	}
 }

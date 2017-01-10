@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="60px" viewBox="0 0 40 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>A488FC5B-FC7C-4250-8CB7-3B9B1E510841</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.1-Iconography" transform="translate(-698.000000, -460.000000)">
+            <g id="Icons" transform="translate(496.000000, 273.000000)">
+                <g id="Content">
+                    <g id="examples" transform="translate(0.000000, 188.000000)">
+                        <g id="mobile2" transform="translate(203.000000, 0.000000)">
+                            <path d="M34,44 C34,45.1 33.1,46 32,46 L6,46 C4.9,46 4,45.1 4,44 L4,10 C4,8.9 4.9,8 6,8 L32,8 C33.1,8 34,8.9 34,10 L34,44 L34,44 Z" id="Stroke-522" stroke="#231F1F" stroke-linecap="round"></path>
+                            <path d="M38,52 C38,55.3 35.3,58 32,58 L6,58 C2.7,58 0,55.3 0,52 L0,6 C0,2.7 2.7,0 6,0 L32,0 C35.3,0 38,2.7 38,6 L38,52 L38,52 Z" id="Stroke-523" stroke="#231F1F" stroke-linecap="round"></path>
+                            <path d="M13,3 L25,3" id="Stroke-524" stroke="#231F1F" stroke-linecap="round"></path>
+                            <polygon id="Fill-525" fill="#231F1F" points="11 51 9 51 9 53 11 53"></polygon>
+                            <polygon id="Fill-526" fill="#231F1F" points="29 51 27 51 27 53 29 53"></polygon>
+                            <polygon id="Stroke-527" stroke="#231F1F" stroke-linecap="round" stroke-linejoin="round" points="24 54 14 54 14 50 24 50"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

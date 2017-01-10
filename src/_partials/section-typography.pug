@@ -1,63 +1,84 @@
 #section-typography.typography.main
   .content
-    // ===== Sections =====
+    // ===== Sections ===== //
     #firts-sectionA.section.sec-typography
-      .lettera(data-aos='fade-right' data-aos-anchor="#section-typography" data-aos-anchor-placement="top-bottom" data-aos-offset="-400" data-aos-easing="ease-in-sine" data-aos-duration="500") A
-      .fontname(data-aos='fade-right' data-aos-anchor="#section-typography" data-aos-anchor-placement="top-bottom" data-aos-offset="-300" data-aos-easing="ease-in-sine" data-aos-duration="650") Aa
-        h1.museo Museo Sans Rounded 
+      .lettera A
+      .fontname Aa
+        h1.helvetica Helvetica Neue
       article.section-article.typography-article
         section.animated.delay
           .section-inner
             h1.section-inner__title Typography.
-        section.typography-content(data-aos='fade-right' data-aos-anchor="#section-typography" data-aos-anchor-placement="top-bottom" data-aos-offset="-200" data-aos-easing="ease-in-sine" data-aos-duration="800")
-          .grid-100.grid-sm-100.fontname Aa
-            h1.museo Museo Sans Rounded 
+        section.typography-content
+          .grid-100.grid-sm-100.fontname 
+            .letters Aa
+            h1.museo Helvetica Neue
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Heading 1</h1>
             .grid-70.grid-sm-100.typo-container
               <h1>The quick brown fox jumps over the lazy dog</h1>
               .typo_desc_container size: 32px; weight: bold; letter-spacing: 0.25;
           .grid-100.grid-sm-100.tgrap    
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Heading 2</h1>
             .grid-70.grid-sm-100.typo-container
               <h2>The quick brown fox jumps over the lazy dog</h2>
               .typo_desc_container size: 28px; weight: bold; letter-spacing: 0.25;
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Heading 3</h1>
             .grid-70.grid-sm-100.typo-container
               <h3>The quick brown fox jumps over the lazy dog</h3>
               .typo_desc_container size: 26px; weight: bold; letter-spacing: 0;
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Heading 4</h1>
             .grid-70.grid-sm-100.typo-container
               <h4>The quick brown fox jumps over the lazy dog</h4>
               .typo_desc_container size: 22px; weight: bold; letter-spacing: 0;
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Description</h1>
             .grid-70.grid-sm-100.typo-container
               .hdescription The quick brown fox jumps over the lazy dog
               .typo_desc_container size: 16px; weight: regular/bold; letter-spacing: 0;    
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Product Pricing</h1>
             .grid-70.grid-sm-100.typo-container
               .hproduct The quick brown fox jumps over the lazy dog
               .typo_desc_container size: 16px; weight: regular/bold; letter-spacing: 0;
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Title/Footer Text</h1>
             .grid-70.grid-sm-100.typo-container
-             .htitle The quick brown fox jumps over the lazy dog
+             .htitle <strong>The quick brown fox</strong>jumps over the lazy dog
              .typo_desc_container size: 12px; weight: bold/regular; letter-spacing: 0;
           .grid-100.grid-sm-100.tgrap
-            .grid-30.grid-sm-100.typo-description.animated.delay
+            .grid-30.grid-sm-100.typo-description
               <h1>Menu Text</h1>
             .grid-70.grid-sm-100.typo-container
-             .hmenu <strong>The quick brown fox</strong> jumps over the lazy dog
+             .hmenu The quick brown fox jumps over the lazy dog
              .typo_desc_container size: 10px; weight: bold; letter-spacing: 0;
-          
+
+        hr
+
+        //- Mosaic - images
+        section#typograpgymosaic.row
+          .section-inner
+            .grid-30.grid-smd-100
+              .tmosaic Mosaic tiles
+              .textmosaic Vary in sizes and contains the product name, discription and price.
+            .grid-70.grid-smd-100
+              .timage 
+                img(src="img/costco/imagery/heading.PNG", alt="")
+          .section-inner
+            .grid-30.grid-smd-100
+              .tmosaic Product Page Badges
+              .textmosaic Are placed at the bottom of a product details page in two columns to provide more details about a product. 
+            .grid-70.grid-smd-100
+              .timage
+                img(src="img/costco/imagery/pheading.PNG", alt="")
+                <h3>Heading 3</h3>
+                .hdescription A longer description footer, will usually be one or two lines long, depending on the length of the copy.

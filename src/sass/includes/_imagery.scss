@@ -1,0 +1,173 @@
+// ===== Section =====
+#section-imagery {
+
+	.content {
+		padding: 0 4%;
+	}
+
+	.imagery-content {
+		max-width: 1020px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+
+		section {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 10%;
+  		margin-top: 10%;
+		}
+
+		.section-inner__title {
+			text-align: left;
+			color: $yellow;
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
+
+//imagery-specific styles
+
+.imagery-content section {
+
+	.imagery-title-sm {
+		font-size: 12px;
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.imagery-desc-sm {
+		font-size: 12px;
+		margin: 0;
+	}
+
+	img {
+    margin: 0 auto;
+    display: block;
+    // width: 700px;
+		width: 100%;
+	}
+}
+
+
+
+
+.badge {
+	display: flex;
+	justify-content: center;
+}
+
+.badge-circle {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5%;
+	position: relative;
+
+	&:after {
+    content: '' ; 
+    display: block ; 
+    position: absolute ; 
+    top: -6px ; 
+    left: -6px ; 
+		width: 122px;
+		height: 122px;
+    border-radius: 50% ; 
+	}
+
+	span {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;		
+	}
+}
+
+.badge-circle:nth-child(1) {
+	background-color: #416619;
+
+	&:after {
+    border: 3px solid #416619;
+	}
+}
+
+.badge-circle:nth-child(2) {
+	background-color: #d21e3e;
+	
+	&:after {
+    border: 3px solid #d21e3e;
+	}
+}
+
+.badge-circle:nth-child(3) {
+	background-color: #a98b4d;
+	
+	&:after {
+    border: 3px solid #a98b4d;
+	}
+}
+
+
+	
+.imagery-content {
+
+	.imagery-flag-img {
+		width: 260px;
+		margin: 0 14%;
+	}
+}	
+
+
+
+
+
+@media (max-width: #{$small-desktop}) {
+
+	.imagery-content {
+
+		.grid-25 {
+			margin-bottom: 5%;
+		}
+		
+		.imagery-flag-img {
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: #{$phone-large}) {
+
+	.badge {
+		display: flex;
+	}
+
+	.badge-circle {
+    width: 78px;
+    height: 78px;
+    margin: 3%;
+
+
+		&:after {
+			content: '' ; 
+			display: block ; 
+			position: absolute ; 
+			top: -6px ; 
+			left: -6px ; 
+			width: 90px;
+			height: 90px;
+			border-radius: 50% ; 
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+}

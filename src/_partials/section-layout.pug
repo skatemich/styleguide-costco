@@ -1,39 +1,274 @@
 #section-layout.layout.main
-
-  include navigation-top
           
   .content
 
     // ===== Sections =====
     .layout-content
-      article.section-article.layout-article
+      article.section-article.layout-article.animated.delay
               
         // =====Sections--iconography-example =====
-        section.animated.delay.row
+        .animated.delay.row
           h1.section-inner__title Layout.
 
-        section.button-content.row
-          .grid-25.grid-sm-100.button-description
+        //- Layout - Grid
+        section.row.layout_grid
+          .grid-25.grid-sm-100.layout__desc
             h3 Grid System
             p Our grid system is composed of a twelve-column grid with a 20px gutter between columns and a 10px gutter on the grid edges.
           
-          .grid-75.layout-container
-             ada
+          .grid-75.grid-sm-100
+            .layout-background
+              .grid-100.layout-container 100%
+              .grid-100.layout-annotation
+                span 10px
+                span 1170px
+                span 10px
+                .grid-100.layout-annotation-line
+                  span
+                  span
+                  span
+                  span
+            .layout-background
+              .grid-50.layout-container 50%
+              .grid-50.layout-container 50%
+            .layout-background
+              .grid-33.layout-container 33%
+              .grid-33.layout-container 33%
+              .grid-33.layout-container 33%
+            .layout-background
+              .grid-25.layout-container 25%
+              .grid-25.layout-container 25%
+              .grid-25.layout-container 25%
+              .grid-25.layout-container 25%
 
-        section.button-content.row
-          .grid-25.grid-sm-100.button-description
-            h3 Mixing Grid Leyout
+        hr
+        //- Layout - Mixing Grid
+        section.row.layout_mixing
+          .grid-25.grid-sm-100.layout__desc
+            h3 Mixing Grid Layout
             p The grid is easily extended by combining various column sizes for the mosaic tile layouts which are used throughout the website.
           
-          .grid-75
-            layout-container ada
+          .grid-75.grid-sm-100
+            .layout-background
+              .grid-100.layout-annotation
+                span 10px
+                span 1170px
+                span 10px
+                .grid-100.layout-annotation-line
+                  span
+                  span
+                  span
+                  span
+                  
+              .grid-66
+                .grid-100
+                  .layout-container 66%
+                .grid-50
+                  .layout-container 33%
+                .grid-50
+                  .layout-container 33%
 
-        section.button-content.row
-          .grid-25.grid-sm-100.button-description
+              .grid-33
+                .layout-container.layout-container-tall 33%
+
+            .layout-background
+              .grid-66
+                .grid-100
+                  .layout-container 66%
+                .grid-100
+                  .layout-container 66%
+
+              .grid-33
+                .layout-container.layout-container-tall 33%
+
+        hr
+        //- Layout - Nesting Grid
+        section.row.layout_nesting
+          .grid-25.grid-sm-100.layout__desc
             h3 Nesting Grid Layouts
             p The grid layout is further customized by nesting different columns.
           
-          .grid-75
-            layout-container ada
+          .grid-75.grid-sm-100
+            .layout-background
+              .grid-100.layout-annotation
+                span 10px
+                span 1170px
+                span 10px
+                .grid-100.layout-annotation-line
+                  span
+                  span
+                  span
+                  span
+                  
+              .grid-50
+
+                .grid-100
+                  .layout-container.layout-container-tall 50%
+
+                .grid-100
+                  .layout-container 50%
+
+                .grid-100
+                  .layout-container 50%
+
+                .grid-50
+                  .layout-container 25%
+                .grid-50
+                  .layout-container 25%
+
+                .grid-50
+                  .layout-container 25%
+                .grid-50
+                  .layout-container 25%
+
+              .grid-50
+                 .grid-100
+                   .layout-container 50%
+                 .grid-100
+                   .layout-container 50%
+                 .grid-100
+                   .layout-container 50%
+                 .grid-100
+                   .layout-container 50%
+                 .grid-50
+                   .layout-container 25%
+                 .grid-50
+                   .layout-container 25%
+                 .grid-50
+                   .layout-container 25%
+                 .grid-50
+                   .layout-container 25%
+
+        hr
+        //- Layout - Desktop
+        section.row.layout_desktop#layout_desktop
+          .grid-25.grid-sm-100.layout__desc
+            h3 Desktop
+            p The home page grid illustrates various uses of the established grid layout.
+          
+          .grid-75.grid-sm-100
+            .layout-background
+              
+              .layout-container.layout-container_banner 100%
+                .grid-100.layout-annotation
+                  span 2000px
+                  .grid-100.layout-annotation-line
+
+              .grid-100.layout-annotation
+                span 10px
+                span 1170px
+                span 10px
+                .grid-100.layout-annotation-line
+                  span
+                  span
+                  span
+                  span
+
+              .grid-66
+
+                .grid-100
+                  .layout-container 66%
+
+                .grid-50
+                  .layout-container 33%
+                .grid-50
+                  .layout-container 33%
+
+              .grid-33
+                 .grid-100
+                   .layout-container.layout-container-tall 33%
+
+              .grid-100.layout-container-no_margin_grid                
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+
+        hr
+        //- Layout - Mobile Device
+        section.row.layout_desktop.layout_mobile#layout_mobile
+          .grid-25.grid-sm-100.layout__desc
+            h3 Mobile Device
+            p Our column sizes automatically change dimensions once they reach certain breakpoints.
+            p To illustrate, resize your browser window and you will see the grid columns change size.
+            p To the right is a sample of what it would look like on a mobile device.
+          
+          .grid-75.grid-sm-100
+            .layout-background
+              
+              .layout-container.layout-container_banner 100%
+                .grid-100.layout-annotation
+                  span 320px
+                  .grid-100.layout-annotation-line
+
+              .grid-100
+                .layout-container 100%
+              .grid-100
+                .layout-container 100%
+              .grid-100
+                .layout-container 100%
+
+              .grid-100.layout-container-no_margin_grid                
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+                .grid-50
+                  .layout-container.layout-container-no_margin 50%
+
+        hr
+        //- Layout - Tablet
+        section.row.layout_desktop.layout_mobile.layout_tablet#layout_tablet
+          .grid-25.grid-sm-100.layout__desc
+            h3 Tablet
+            p Our column sizes automatically change dimensions once they reach certain breakpoints.  
+            p To illustrate, resize your browser window and you will see the grid columns change size.
+            p To the right is a sample of what it would look like on a tablet.
+          
+          .grid-75.grid-sm-100
+            .layout-background
+              
+              .layout-container.layout-container_banner 100%
+                .grid-100.layout-annotation
+                  span 1024px
+                  .grid-100.layout-annotation-line
+
+              .grid-50
+                .layout-container 50%
+              .grid-50
+                .layout-container 50%
+              .grid-50
+                .layout-container 50%
+              .grid-50
+                .layout-container 50%
+
+              .grid-100.layout-container-no_margin_grid                
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+                .grid-33
+                  .layout-container.layout-container-no_margin 33%
+
 
       .section-next
