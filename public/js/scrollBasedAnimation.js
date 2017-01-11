@@ -172,3 +172,4 @@ var scene = new ScrollMagic.Scene({
         .setTween(typographyS1)
         //.addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
         .addTo(controller);
+

@@ -3,11 +3,12 @@ html {
 }
  
 body {
+  background-size:273px; 
   height: 100%;
   min-height: 100%;
   margin: 0;
   font-family: 'Roboto', arial, sans-serif;
-  background-image: url(../img/costco/costco-logo.png);
+  background-image: url(../img/costco/costco-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -34,11 +35,7 @@ body {
   height: 100%;
   cursor: pointer;
   opacity: 1;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -58,7 +55,7 @@ body {
   -webkit-transition: opacity 0.2s linear 0.5s;
   -moz-transition: opacity 0.2s linear 0.5s;
   transition: opacity 0.2s linear 0.5s;
-  z-index: 10;
+  z-index: 21;
 }
 
 .menu {
@@ -372,13 +369,13 @@ body {
 }
 // svg animation//
 #blind{
+    background: white;
     position: absolute;
     z-index:20;
     height: 100%;
     width: 100%;
     margin: 0;
     top: 0;
-    background: #fff;
     color: #fff;
     min-height: 100vh;
     overflow-y: hidden;
@@ -389,13 +386,13 @@ body {
 }
 .loader {
     position: absolute;
-    width: 500px;
-    height: 200px;
+    width: 304px;
     margin: auto;
+    padding: 12px 0 0 18px;
 }
 .close {
-    transform: translateY(-100%);
-    transition: all 0.5s;
+    transform: translateX(-100%);
+    transition: all 0.01s;
     animation-name: blind;
 }
 @keyframes blind{
@@ -455,7 +452,7 @@ body {
 .start .IvyBXqMQ_21{animation:IvyBXqMQ_draw_21 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
 
 @keyframes IvyBXqMQ_draw{100%{stroke-dashoffset:0;}}
-@keyframes IvyBXqMQ_fade{0%{stroke-opacity:1;stroke:#ccc;}80%{stroke-opacity:1;}100%{stroke:#fff;stroke-opacity:0;}}
+@keyframes IvyBXqMQ_fade{0%{stroke-opacity:1;stroke:#938989;}80%{stroke-opacity:1;}100%{stroke:#fff;stroke-opacity:0;}}
 
 @keyframes IvyBXqMQ_draw_5{11.11111111111111%{stroke-dashoffset: 443}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
 @keyframes IvyBXqMQ_draw_4{11.11111111111111%{stroke-dashoffset: 416}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
