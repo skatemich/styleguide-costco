@@ -392,6 +392,7 @@
 		}
 	}
 	.radio-buttons {
+		flex-direction: row;
 		h4 {
 			margin: 0;
 		}
@@ -779,5 +780,23 @@
 				font-size: 12px;
 			}
 		}
+	}
+}
+
+@media (max-width: #{$tablet-portrait}) {
+	.nav-bar nav ul li {
+		font-size: 6px;
+		.logo {
+			max-height: 25px;
+		}
+	}
+	.button-grid-layout {
+		margin-left: 0;
+		.button--container {
+			width: 100%;
+		}
+	} 
+	.product-thumbs span:last-child {
+		right: 115px;
 	}
 }
