@@ -31,7 +31,7 @@ body {
 
 .container {
   position: fixed;
-  min-width: 115px;
+  width: 115px;
   height: 100%;
   cursor: pointer;
   opacity: 1;
@@ -104,7 +104,7 @@ body {
       position: fixed;
       height: 200vh;
       width: 3px;
-      left: 112px;
+      left: calc(100% - 3px);
       opacity: .6;
       animation: selected-menu 1s;
     }
@@ -385,9 +385,7 @@ body {
     justify-content:center;
 }
 .loader {
-    position: absolute;
     width: 304px;
-    margin: auto;
     padding: 12px 0 0 18px;
 }
 .close {
@@ -482,9 +480,6 @@ body {
 @keyframes IvyBXqMQ_draw_17{11.11111111111111%{stroke-dashoffset: 167}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
 @media (max-width: #{$small-desktop}) {
   .loader {
-    position: absolute;
     width: 280px;
-    height: 200px;
-    margin: auto;
   }
 }
