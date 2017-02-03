@@ -76,7 +76,7 @@ body {
     color: #333;
     margin: 0;
     font-size: 14px;
-    font-weight: 700;
+    // font-weight: 700;
     height: auto;
     text-align: center;
     opacity: 0.2;
@@ -94,6 +94,8 @@ body {
 
 @media (min-width: #{$phone-large}) {
   .active.menu {
+    position: relative;
+
     h2 {
       color: #fff;
       opacity: 1;
@@ -101,12 +103,17 @@ body {
     }
     &:after {
       content: '';
-      position: fixed;
-      height: 200vh;
+      // position: fixed;
+      position: absolute;
+      // height: 200vh;
+      height: 100%;
       width: 3px;
-      left: calc(100% - 3px);
+      top: 0;
+      left: 100%;
       opacity: .6;
-      animation: selected-menu 1s;
+      // animation: selected-menu 1s;
+      transform: scaleY(20);
+      transition: transform 1.2s;
     }
   } 
 
@@ -218,6 +225,7 @@ body {
   &:after {
     content: '';
     position: fixed;
+    transform: scaleY(1);
     // top: 20px;
     // right: 0;
     // font-family: sans-serif;

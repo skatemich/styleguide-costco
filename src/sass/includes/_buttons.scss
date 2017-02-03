@@ -49,7 +49,7 @@
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		margin-left: 5%;
-    	margin-top: 2%;
+		margin-top: 2%;
 	}
 }
 .button-description {
@@ -392,12 +392,15 @@
 		}
 	}
 	.radio-buttons {
+		position: relative;
+
 		flex-direction: row;
 		h4 {
 			margin: 0;
 		}
 		p {
 			position: absolute;
+			left: 0px;
 			bottom: -30px;
 			font-size: 12px;
 		}
@@ -626,7 +629,8 @@
 			border: solid 1px #dfdfdf;
 			position: relative;
 			&.current {
-				outline: 3px solid $dark-blue;
+				// outline: 3px solid $dark-blue;
+				box-shadow: 0 0 0 3px $dark-blue;
 			}
 			.top-text {
 				position: absolute;
@@ -674,16 +678,19 @@
 		margin: 0 20px 20px 0;
 		position: relative;
 		&:first-child {
-			outline: 3px solid $dark-blue;
+			// outline: 3px solid $dark-blue;
+			box-shadow: 0 0 0 3px $dark-blue;
 			h5 {
 				color: $light-blue;
 			}
 		&:hover {
-			outline: 3px solid $dark-blue;
+			// outline: 3px solid $dark-blue;
+			box-shadow: 0 0 0 3px $dark-blue;
 		}
 		}
 		&:hover {
-			outline: 3px solid #64c8ff;
+			// outline: 3px solid #64c8ff;
+			box-shadow: 0 0 0 3px #64c8ff;
 			h5 {
 				color: $light-blue;
 			}
@@ -766,7 +773,8 @@
 		padding-bottom: 20px;
 		.tile {
 			&:nth-child(2) {
-				outline: 3px solid #64c8ff;
+				// outline: 3px solid #64c8ff;
+				box-shadow: 0 0 0 3px #64c8ff;
 				&:hover {
 					box-shadow: none;
 				}
