@@ -102,14 +102,6 @@ body {
       font-weight: 100;
     }
     &:after {
-      content: '';
-      // position: fixed;
-      position: absolute;
-      // height: 200vh;
-      height: 100%;
-      width: 3px;
-      top: 0;
-      left: 100%;
       opacity: .6;
       // animation: selected-menu 1s;
       transform: scaleY(20);
@@ -224,8 +216,14 @@ body {
 .menu {
   &:after {
     content: '';
-    position: fixed;
+    // position: fixed;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 3px;
+    height: 100%;
     transform: scaleY(1);
+    opacity: 0;
     // top: 20px;
     // right: 0;
     // font-family: sans-serif;

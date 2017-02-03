@@ -3,4 +3,5 @@ Costco Styleguide - Demo Website
 Version Log:
 v1.0 - 1/30/2017 (1st uploaded)
 v1.1- 2/1/2017 (cross-browser fix)
-v1.2- 2/1/2017 (Outline issues on Firefox fix)
+v1.2- 2/1/2017 (Outline issues fix [Firefox])
+v1.3- 2/2/2017 (Side menu animation fix [Firefox])
